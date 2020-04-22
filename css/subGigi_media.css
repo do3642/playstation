@@ -1,0 +1,68 @@
+
+@media (max-width:1600px){
+    .con1 p{
+        width: 200px;height: 150px;
+        font-size:10px;
+    }   
+    .con1 p.active{
+        width: 250px;height: 250px;;
+    }
+}
+
+
+@media (max-width:993px){
+    h2,h3,h4,h5,h6{
+        font-size: 1.5em;
+    }
+    .container >figure {
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+    .container >figure figcaption {
+        width: 100%;
+    }
+    .pro figure {
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+    .pro figure figcaption {
+        width: 100%;
+        text-align: center;
+    }
+ 
+
+
+
+
+
+
+    .introduce .figBox figure{
+        flex-wrap: wrap;
+    }
+    .introduce .figBox figure:nth-of-type(1) p{width: 100%;}
+    .introduce .figBox figure:nth-of-type(2) p{margin: 0 auto;}
+    .introduce .figBox figure:nth-of-type(3) p{width: 100%;}
+    .introduce .figBox figure:nth-of-type(4) p{margin: 0 auto;}
+    .introduce .figBox figure figcaption{
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width:480px){
+
+
+
+
+
+
+
+
+
+
+
+    .introduce .figBox figure figcaption{
+        font-size: 12px;
+    }
+}

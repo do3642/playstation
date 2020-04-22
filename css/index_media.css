@@ -1,0 +1,292 @@
+@media (max-width:1600px){
+    header nav ul li ul li a{
+        margin: 10px;
+    }
+}
+@media (max-width:1450px){
+    #wrap .content .con_top10 .con_top .top_right ol li a span{
+        margin: 0 25px; 
+     }
+     
+     #wrap .content .con_top10 .con_top .top_right ol:first-of-type{
+         display: none;
+     }
+     #wrap .content .con_top10 .con_top .top_right ol:last-of-type{
+        display: flex;
+     }
+     #wrap .content .con_top10 .con_top .top_right ol li a{
+         padding: 0;margin: 0;
+         border: none;
+     }
+     #wrap .content .con_top10 .con_top .top_right ol li:last-of-type a{
+         padding: 0;margin: 0;
+     }
+     #wrap .content .con_top10 .con_top .top_right ol li a img{
+         width: 100px;height: 100px;
+         padding: 0;margin:0;
+         border-radius: 0;
+     }
+     #wrap .content .con_top10 .con_top .top_left{
+       min-width: 700px;
+    } 
+
+}
+@media (max-width:1250px){
+    #wrap .content .con_top10 .con_top{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+  
+}
+
+
+
+@media (max-width:1200px){
+    #wrap header > a{
+        display: none;
+    }
+    #wrap header h1 a img{
+        height: 40px;
+        margin-bottom: 5px;
+    }
+    #wrap header .bugger{
+        left: 15px;top:10px;
+        width: 30px;height: 30px;
+    }
+    #wrap header nav{
+        width:40vw;
+        z-index:20;
+    }
+    #wrap header nav ul li a{
+        margin: 10px;
+        font-size: 1.5em;
+        
+    }
+    #wrap header nav ul{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #wrap header nav ul > li{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+    #wrap header nav ul li ul li a {
+        font-size:1em;
+    }
+
+    
+    #wrap .visual .figBox figure p video{
+        display: none;
+    }
+    #wrap .visual .figBox figure p iframe{
+        display: none;
+    }
+    #wrap .visual .figBox figure figcaption{
+       display: none;
+    }
+    #wrap .visual .visual_but .btn_css{
+       right: 50%;
+       transform: translate(50%,0);
+       width: 200px;height: 40px;
+    }
+    #wrap .visual .visual_but .btn_css input{
+        font-size: 1em;
+    }
+    #wrap .visual .figBox figure span{
+        width: 70vw;height: 200px;
+        transform: translateY(-30%);
+    }
+    #wrap .visual .figBox figure:nth-of-type(1) span{
+        height: 200px;
+    }
+    #wrap .visual .figBox figure:nth-of-type(4) span{
+        height: 250px;
+    }
+
+    #wrap .content .con_gigi .btn_css{
+        width: 200px;height: 40px;
+    }
+    #wrap .content .con_top10 .con_top .top_right::after{
+        font-size: 1.2em;
+    }
+
+    #wrap .content .con_res > div{
+        height: 300px;
+    }
+    #wrap .content .con_res div p{
+        width: 500px;
+        height: 300px;
+    }
+    #wrap .content .con_res > p {
+        flex-wrap: wrap;
+       width: 75%;
+        margin: 0 auto;
+    }
+    #wrap .content .con_res > p span{
+        margin: 5px;
+    }
+   
+}
+@media (max-width:993px){
+    #wrap .content .con_res > p {
+       width: 90%;
+    }
+    #wrap .content .con_gigi figure{
+        flex-wrap: wrap;
+    }
+    #wrap .content .con_gigi figure p{
+        width: 400px;
+    }
+   
+}
+@media (max-width:750px){
+    #wrap .content .con_res > p {
+        width: 100vw;
+     }
+    #wrap .content .con_res > p span{
+        width: 40vw;height: 150px;
+    }
+}
+@media (max-width:650px){
+    #wrap .content .con_game div figure{
+        width: 200px;height: 150px;
+    }
+    #wrap .content .con_game .btn_css{
+        height: 40px;
+    }
+    #wrap .content .con_top10 .con_top .top_right .btn_css {
+        width: 200px;height: 40px;
+        bottom: 2%;
+    }
+   
+}
+@media (max-width:600px){
+    #wrap .content h2 {padding-top:50px;}
+    #wrap header > span{
+        display: none;
+    }
+    #wrap .content .con_gigi figure p{
+        width: 400px;
+        height: 300px;
+    }
+    #wrap .visual .figBox figure span{
+        width: 70vw;height: 200px;
+        transform: translateY(-30%);
+    }
+    #wrap .visual .figBox figure:nth-of-type(1) span{
+        height: 100px;
+    }
+    #wrap .visual .figBox figure:nth-of-type(4) span{
+        height: 150px;
+    }
+    #wrap .content .con_top10 .con_top .top_left{
+        display: none;
+    }
+    #wrap .content .con_top10 .con_top .top_right .mob_top10{
+        width: 100vw;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    #wrap .content .con_top10 .con_top .top_right ol li a img{
+        width: 200px;height: 150px;
+    }
+    #wrap .content .con_res > input{
+        width: 80px;height: 80px;
+        font-size: 1em;
+    }
+    #wrap .content .con_res > input.active{
+     top: 5%;
+    }
+    
+   #wrap .fix{
+       display: none;
+   }
+   
+
+   
+
+   
+}
+
+@media (max-width:480px){
+    #wrap .content h2 {
+        font-size: 1.5em;
+    }
+    #wrap .content .con_gigi figure p{
+        width: 300px;
+        height: 300px;
+    }
+    #wrap .content .con_gigi figure figcaption{
+        width: 85vw;
+    }
+    #wrap .content .con_gigi figure figcaption strong{
+        font-size: 4vw;
+       
+    }
+    #wrap .content .con_gigi figure figcaption small{
+       font-size: 3vw;
+    }
+    #wrap .content .con_gigi .btn_css{
+        top: 65%;
+    }
+    
+    /* #wrap .visual .scroll{
+        bottom: -28%;
+    } */
+    #wrap .visual aside a p{
+        display: none;
+    }
+
+    #wrap .content .con_top10 .con_top .top_right .mob_top10{
+        width: 70vw;
+    }
+
+
+
+    #wrap .content .con_top10 .con_top .top_right ol li a img{
+        width: 110px;
+        height: 85px;
+      
+    }
+   
+
+    #wrap .content .con_res > div input{
+        width: 30px;height: 30px;
+    }
+    #wrap .content .con_res > div {
+        height: 200px;
+    }
+    #wrap .content .con_res div p{
+        width: 400px;
+        height: 200px;
+    }
+    #wrap .content .con_game div figure{
+        width: 150px;height: 100px;
+        margin: 5px;
+    }
+    #wrap .content .con_res > p span{
+        width: 150px;height: 100px;
+    }
+    #wrap .content .con_res div p{
+        width: 300px;
+        height: 150px;
+    }
+   
+    #wrap .content .con_game article {
+        height: 80%;
+    }
+
+    #wrap .content .con_res h5 {
+        padding: 50px 0 0 0;
+        font-size: 1.5em;
+    }
+}
+@media (max-width:340px){
+    
+  
+}

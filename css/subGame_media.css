@@ -1,0 +1,161 @@
+
+@media (max-width:1600px){
+    header nav ul li ul li a{
+        margin: 10px;
+    }
+}
+@media (max-width:1200px){
+
+    #wrap header > a{
+        display: none;
+    }
+    #wrap header h1 a img{
+        height: 40px;
+        margin-bottom: 5px;
+    }
+    #wrap header .bugger{
+        left: 15px;top:10px;
+        width: 30px;height: 30px;
+    }
+    #wrap header nav{
+        width:40vw;
+        z-index:20;
+    }
+    #wrap header nav ul li a{
+        margin: 10px;
+        font-size: 1.5em;
+        
+    }
+    #wrap header nav ul{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #wrap header nav ul > li{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+    #wrap header nav ul li ul li a {
+        font-size:1em;
+    }
+
+
+    #wrap .visual figure figcaption{
+        font-size: .8em;
+    }
+    #wrap .visual figure figcaption strong {
+        font-size: 3em;
+    }
+    #wrap .visual figure p {
+        width: 450px;height: 400px;
+        margin: 0 auto;
+        
+    }
+    #wrap .visual figure figcaption {
+      
+    }
+    #wrap .container .content {
+        width: 90%;
+    }
+        
+}
+@media (max-width:993px){
+  
+    #wrap .visual figure p {
+            width: 350px;height: 250px; 
+        }
+    #wrap .visual > p:nth-of-type(1){display: none;}
+    #wrap .visual > p:nth-of-type(2){display: block;}
+    #wrap .visual figure p{display: none;}
+    #wrap .visual .scroll{
+        display: block;
+    }
+    
+
+}
+@media (max-width:600px){
+    #wrap .visual figure {
+        top: 50%;
+        
+    }
+    #wrap header{
+        justify-content: center;
+    }
+    #wrap header span input{
+        display: none;
+    }
+    #wrap .visual figure{
+        flex-direction: column;
+    }
+    #wrap .visual{
+        height: 100vh;
+    }
+    #wrap .visual .scroll{
+        display: block;
+    }
+    #wrap .visual figure figcaption strong{
+        
+    }
+    #wrap .visual figure p.active {
+        transform: translate(0,0);
+    }
+
+
+
+
+    #wrap .container .sub_menu li a{
+        margin: 20px;
+        width: 22vw;
+      
+    }
+    #wrap .container .content {
+        display: block;
+        width: 95%;
+    }
+    #wrap .container .find {
+        width: 100%;
+        font-size: 12px;
+    }
+    #wrap .container .find ul {
+        font-size: 12px;
+    }
+    #wrap .container .find ul li .jang{
+        display: none;
+    }
+  
+
+    #wrap .container .move_btn a {
+        margin: 0;
+    }
+    #wrap .container .find .mob_jang{
+        display: block;
+    }
+    #wrap .container .figBox figure {
+        margin: 3px;
+        width: 40vw;
+    }
+
+    #wrap .container .figBox {
+    justify-content: center;
+    }
+    #wrap .container .move_btn button {
+        margin: 0 10px;
+    }
+    #wrap .container .sub_menu a::before {
+        border: none;
+    }
+    #wrap .container .sub_menu a::after {
+       border: none;
+    }
+}
+@media (max-width:480px){
+    #wrap .container .sub_menu a{
+        font-size: 1.2em;
+    }
+    .figBox figure{
+        font-size: 12px;
+    }
+  
+}

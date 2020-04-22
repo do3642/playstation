@@ -1,0 +1,187 @@
+
+@media (max-width:1600px){
+    header nav ul li ul li a{
+        margin: 10px;
+    }
+    .plus .con1{
+        flex-direction: row;
+    }
+    .plus .con1 figure:nth-of-type(1){
+        position: relative;left: 0;
+        transform:rotateY(0) scale(1);
+        opacity: 1;
+    }
+    .plus .con1 figure:nth-of-type(2){
+        transform: scale(1);
+    }
+    .plus .con1 figure:nth-of-type(3){
+        position: relative;right: 0;
+        transform: rotateY(0) scale(1);
+        opacity: 1;
+    }
+    .plus .con1 figure{width: 380px; margin:5px;}
+    .plus .con1 figure > p{width:350px;}
+    .plus .con1 figcaption{width: 350px;}
+    .plus .con1 .btn_css{display: none;}
+
+}
+@media (max-width:1200px){
+    #wrap header > a{
+        display: none;
+    }
+    #wrap header h1 a img{
+        height: 40px;
+        margin-bottom: 5px;
+    }
+    #wrap header .bugger{
+        left: 15px;top:10px;
+        width: 30px;height: 30px;
+    }
+    #wrap header nav{
+        width:40vw;
+        z-index:20;
+    }
+    #wrap header nav ul li a{
+        margin: 10px;
+        font-size: 1.5em;
+        
+    }
+    #wrap header nav ul{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #wrap header nav ul > li{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+    #wrap header nav ul li ul li a {
+        font-size:1em;
+    }
+    #wrap .visual figure figcaption strong {
+        font-size: 3em;
+    }
+
+    #wrap .visual p video{
+      
+      position: absolute;bottom: 0;
+    }
+
+
+
+    .plus .con1 figure{width: 350px; margin:5px;}
+    .plus .con1 figure > p{width:300px;}
+    .plus .con1 figcaption{width: 300px;}
+
+
+    .notice .notBox{width: 993px;}
+}
+@media (max-width:993px){
+
+    #wrap .visual figure p{
+        display: none;
+    }
+    #wrap .visual figure figcaption.active{
+        margin-left: 0;
+    }
+  .plus .con1{
+    flex-wrap: wrap;
+    padding: 50px 0;
+  }
+  
+  .plus .con1 figure{width: 90vw; margin:5px;}
+  .plus .con1 figure > p{width:70%;}
+  .plus .con1 figcaption{width: 70%;}
+
+  .rewards{
+    flex-wrap: wrap;
+  }
+  .rewards > p {
+      width: 90%;
+      text-align: center;
+  }
+  .rewards >span:first-of-type{height: auto;}
+  .notice .notBox{width: auto; margin: 0 10px;}
+}
+@media (max-width:780px){
+    .ticket{
+        flex-wrap: wrap;
+    }
+    .ticket figure > p{
+        width: 310px;height: 310px;
+    }
+    .ticket figure figcaption{
+        width: 310px;
+        font-size: 12px;
+    }
+    .ticket figure figcaption strong{font-size: 1.5em;}
+    .ticket figure figcaption p{font-size: 1em;}
+    .ticket figure figcaption small{font-size: 1em;}
+     
+}
+@media (max-width:600px){
+    #wrap header{
+        justify-content: center;
+    }
+    #wrap header span input{
+        display: none;
+    }
+    #wrap .visual figure figcaption strong {
+        font-size: 10vw;
+    }
+    #wrap .container .sub_menu li a{
+        margin: 20px;
+        width: 22vw;
+       transform: scale(.9);
+    }
+    #wrap .container .sub_menu a::before {
+        border: none;
+    }
+    #wrap .container .sub_menu a::after {
+        border: none;
+    }
+    .plus .con1 figcaption{
+        font-size: 14px;
+    }
+   
+}
+
+@media (max-width:480px){
+    #wrap .container .sub_menu a{
+        font-size: 1.2em;
+    }
+    .plus .con1 figcaption{
+        font-size: 10px;
+    }
+   h2,h3,h4{
+       font-size: 1.5em;
+   }
+   #wrap .container {
+       margin-top: 50px;
+   }
+   #wrap .container h2 {
+       padding: 25px;
+   }
+   .con2 h4 {
+       padding: 25px 0;
+   }
+   .rewards > p {
+       font-size: 12px;
+       padding: 0 5px;
+   }
+   .rewards .textBox{
+       padding: 0 5px;
+   }
+   .rewards .textBox div{
+       font-size: 12px;
+   }
+    
+   .notice .notBox li{
+       font-size: 12px;
+       padding: 0 5px;
+       line-height: 25px;
+   }
+   
+}

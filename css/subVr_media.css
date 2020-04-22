@@ -1,0 +1,195 @@
+@media (max-width:1600px){
+    header nav ul li ul li a{
+        margin: 10px;
+    }
+}
+@media (max-width:1200px){
+    #wrap header > a{
+        display: none;
+    }
+    #wrap header h1 a img{
+        height: 40px;
+        margin-bottom: 5px;
+    }
+    #wrap header .bugger{
+        left: 15px;top:10px;
+        width: 30px;height: 30px;
+    }
+    #wrap header nav{
+        width:40vw;
+        z-index:20;
+    }
+    #wrap header nav ul li a{
+        margin: 10px;
+        font-size: 1.5em;
+        
+    }
+    #wrap header nav ul{
+        display: flex;
+        flex-direction: column;
+
+    }
+    #wrap header nav ul > li{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #wrap header nav ul li ul li a {
+        font-size:1em;
+    }
+    #wrap .visual{
+        height: 100vh;
+    }
+    #wrap .visual figure {
+        top: 50%;
+    }
+    #wrap .visual figure figcaption{
+        transform: translateX(0);
+    }
+    #wrap .visual figure p{display: none;}
+    #wrap .visual .scroll{
+        display: block;
+    }
+    #wrap .visual figure figcaption strong{
+        font-size: 3em;
+    }
+   
+    #wrap > .visual > p{
+        background-image: url('../img/subVr/mobvisual.jpg');
+        
+    }
+    #wrap .container .hard .vrCon{
+       flex-wrap: wrap;
+    }
+
+    #wrap .container .hard .vrCon figure {
+        margin: 0 auto;
+    }
+    #wrap .container .control .conImg{
+        flex-wrap: wrap-reverse;
+    }
+    #wrap .container .control .conImg2{
+        flex-wrap: wrap;
+    }
+    #wrap .container .control .conImg > p{
+     margin: 0 auto;
+     width: 100%;
+    }
+    #wrap .container .control .conImg2 > p{
+        margin: 0 auto;
+        width: 100%;
+    }
+   
+}
+@media(max-width:993px){
+    h2,h3,h4,h5,h6{
+        font-size: 1.5em;
+    }
+}
+@media (max-width:630px){
+    #wrap .container .conGame .figBox figure p{
+        width: 220px;
+    }
+}
+@media (max-width:600px){
+    #wrap header{
+        justify-content: center;
+    }
+    #wrap header span input{
+        display: none;
+    }
+    #wrap .visual figure figcaption{
+        /* line-height: 50px; */
+    }
+    #wrap .visual figure figcaption strong{
+        font-size: 10vw;
+    }
+
+
+
+    #wrap .container .sub_menu li a{
+        margin: 20px;
+        width: 22vw;
+       transform: scale(.9);
+    }
+    #wrap .container .conGame .figBox figure figcaption{
+        white-space: pre-line;
+    }
+    #wrap .container .figBox {
+        justify-content: center;
+        }
+    #wrap .visual figure p{
+        display: none;
+    }
+    #wrap .container .conGame .figBox figure p{
+        width: 200px;height: 170px;
+    }
+    #wrap .container .conGame .figBox figure figcaption{
+        font-size: 0.8em;
+    }
+    #wrap .container .sub_menu a::before {
+        border: none;
+    }
+    #wrap .container .sub_menu a::after {
+        border: none;
+    }
+    #wrap .container .hard .vrCon > div{
+        width: 100%;
+    }
+    
+
+    #wrap .container .hard .vrCon div .textBox {
+        width: 100%;
+    }
+    #wrap .container .hard .vrCon div .textBox{
+        height: 450px;
+    }
+    #wrap .container .control .conImg figure > p {
+        width: 200px;
+    }
+    #wrap .container .control .conImg2 figure > p {
+        width: 200px;
+    }
+}
+@media (max-width:480px){
+    #wrap .container .conGame .figBox figure p{
+        width: 165px;height: 150px;
+    }
+    #wrap .container .conGame .figBox figure figcaption{
+        font-size: 0.8em;
+    }
+    #wrap .container .sub_menu a{
+        font-size: 1.2em;
+    }
+   
+    #wrap .vr .vrBox figure{
+        width: 300px;height: 300px;
+    }
+    #wrap .vr .vrBox figure figcaption {
+        width: 300px;
+    }
+    #wrap .container .control .conImg figure figcaption strong{
+        font-size: 1.3em;
+    }
+    #wrap .container .control .conImg2 figure figcaption strong{
+        font-size: 1.3em;
+    }
+    #wrap .container .hard .vrCon video{
+      height: 300px;
+    }
+    #wrap .container .hard .vrCon div .textBox .moveBox {
+        font-size: 12px;
+    }
+}
+@media (max-width:380px){
+    #wrap .container .conGame .figBox figure p{
+        width: 130px;height: 100px;
+    }
+    #wrap .container .conGame .figBox figure figcaption {
+        width: 120px;
+    }
+    #wrap .container .control h6{
+        white-space: pre-line;
+    }
+    
+}

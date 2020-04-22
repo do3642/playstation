@@ -285,7 +285,9 @@ width: 40px;height: 40px;
 
 
 
-.introduce{}
+.introduce{
+   
+}
 .introduce >h3{
     text-align: center;
 }
@@ -477,6 +479,7 @@ transition: 1s;
 
 .popCon2{
     position: relative;
+    display: none;
 }
 .popCon2 figure{
     display: flex;
@@ -485,7 +488,7 @@ transition: 1s;
     flex-wrap: wrap;
     margin: 0;
     flex: 0 0 100%;
- 
+    align-items: center;
 
 }
 

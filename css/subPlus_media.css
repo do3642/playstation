@@ -103,7 +103,9 @@
       text-align: center;
   }
   .rewards >span:first-of-type{height: auto;}
+
   .notice .notBox{width: auto; margin: 0 10px;}
+  
 }
 @media (max-width:780px){
     .ticket{

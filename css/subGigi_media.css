@@ -1,7 +1,7 @@
 
 @media (max-width:1600px){
     .con1 p{
-        width: 200px;height: 150px;
+        width: 200px;height: 200px;
         font-size:10px;
     }   
     .con1 p.active{
@@ -28,6 +28,7 @@
     .pro figure figcaption {
         width: 100%;
         text-align: center;
+        font-size: 14px;
     }
  
 
@@ -46,6 +47,22 @@
     .introduce .figBox figure figcaption{
         width: 100%;
     }
+
+    .introduce .figBox button {
+        display: none;
+    }
+
+    .intro{display: none;}
+    .popCon2 {
+        margin-top: 100px;
+        display: block;
+    }
+    
+}
+
+@media(max-width:830px){
+    .popCon2 figure p{width: 480px;}
+    .popCon2 figure figcaption{width:480px;font-size: 12px;}
 }
 
 
@@ -59,7 +76,9 @@
 
 
 
-
+    .popCon2 figure p{width: 320px;border-top-left-radius: 50px;
+        border-top-right-radius: 50px;}
+    .popCon2 figure figcaption{width:320px;font-size: 10px;}
 
 
     .introduce .figBox figure figcaption{

@@ -115,29 +115,23 @@ $(function(){
         });
         
         
-        function bar(){
-           
-            $('.navBar small').css({
-                width: 100/6*i+'%'
-            })
-            $('.navBar strong').text(i);
-           
-        }
+      
 
 
         function slideshow(){
-            // if(i==0){
-            //     setTimeout(function(){
-            //         $('.popCon2 .moveBox').css({
-            //             transition:'0s'
-            //         })
-            //         $('.popCon2 .moveBox').css({
-            //             transform:'translateX(-600%)'
-            //         })
-            //     },500)
-            //     i=6
-            // }
-            if(i==6){
+            if(i==0){
+                setTimeout(function(){
+                    $('.popCon2 .moveBox').css({
+                        transition:'0s'
+                    })
+                    $('.popCon2 .moveBox').css({
+                        transform:'translateX(-600%)'
+                    })
+                    
+                },500)
+                i=6 
+            }
+            if(i==7){
                 setTimeout(function(){
                     $('.popCon2 .moveBox').css({
                         transition:'0s'
@@ -145,6 +139,7 @@ $(function(){
                     $('.popCon2 .moveBox').css({
                         transform:'translateX(-100%)'
                     })
+                    
                 },500)
                 i=1
             }
@@ -152,6 +147,14 @@ $(function(){
                 transition:'.5s'
             })
 
+        }
+        function bar(){
+           
+            $('.navBar small').css({
+                width: 100/6*i+'%'
+            })
+            $('.navBar strong').text(i);
+           
         }
         
         
@@ -165,5 +168,22 @@ $(function(){
         cloneElements6.prependTo('.figBox2 .moveBox');
     }
     clone();
+
+
+
+
+
+
+    function media(){
+        var m = window.matchMedia("screen and (max-width: 993px)");
+        m.addListener(function(e){
+            if(e.matches){
+               $('.intro').slideUp();
+            }else{
+            }
+            });
+    }
+    media();
+
 
 })

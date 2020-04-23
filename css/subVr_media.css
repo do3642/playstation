@@ -1,6 +1,11 @@
 @media (max-width:1600px){
-    header nav ul li ul li a{
-        margin: 10px;
+    nav ul li{
+        font-size: 14px;
+    }
+}
+@media (max-width:1350px){
+    nav ul li{
+        padding: 10px;
     }
 }
 @media (max-width:1200px){
@@ -8,7 +13,6 @@
         display: none;
     }
     #wrap header h1 a img{
-        height: 40px;
         margin-bottom: 5px;
     }
     #wrap header .bugger{
@@ -19,24 +23,12 @@
         width:40vw;
         z-index:20;
     }
-    #wrap header nav ul li a{
-        margin: 10px;
-        font-size: 1.5em;
-        
-    }
-    #wrap header nav ul{
-        display: flex;
-        flex-direction: column;
-
-    }
-    #wrap header nav ul > li{
+    nav ul{
         flex-direction: column;
         align-items: center;
-        text-align: center;
     }
-    #wrap header nav ul li ul li a {
-        font-size:1em;
-    }
+
+
     #wrap .visual{
         height: 100vh;
     }
@@ -95,9 +87,14 @@
     #wrap header{
         justify-content: center;
     }
+    #wrap header h1 a img {
+        width: 200px;height: auto;
+    }
     #wrap header span input{
         display: none;
     }
+
+
     #wrap .visual figure figcaption{
         /* line-height: 50px; */
     }
@@ -152,6 +149,11 @@
     }
 }
 @media (max-width:480px){
+    nav ul li{
+        font-size: 10px;
+        padding: 3px;
+    }
+
     #wrap .container .conGame .figBox figure p{
         width: 165px;height: 150px;
     }

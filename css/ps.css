@@ -5,10 +5,7 @@ input:focus {
     outline:none;
 }
 #wrap{
-    position: relative;top: 0;
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden; 
+   
 }
 .scrollEvent{
     overflow: hidden;
@@ -19,22 +16,21 @@ input:focus {
    display: flex;
    justify-content: space-around;
    z-index: 100;
-   position: absolute; top: 0.3%;
+   position: absolute; top: 1.5%;
    border-bottom: 1px solid rgba(255,255,255,0.5);
   align-items:center; 
 }
 #wrap header > a img{
     width: 150px;
-    height: 50px;
+    height:auto;
 }
 #wrap header h1 img{
-    height: 55px;
+    width: 300px;
+    height: auto;
     margin-bottom: 20px;  
 }
 #wrap header span{
     position: relative;
-    width: 150px;
-    height: 20px;
     background: #fff;
 }
 #wrap header span input{
@@ -44,6 +40,7 @@ input:focus {
     background-size: 15px;
     border: none;
     vertical-align: top;
+    padding-left: 5px;
 }
 
 
@@ -52,54 +49,64 @@ input:focus {
     height: 100vh;
     background: rgba(255,255,255);
     width: 40vw;
-    padding-top: 10%;
-    padding-left: 5%;
     transition: 1s;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-left: 4%;
     z-index: 999;
 }
 #wrap header nav.active{
     left:0;
 }
 
-#wrap header nav ul > li{
+nav ul{
     display: flex;
-    margin: 10px auto;
-    align-items: center;
+    align-items: baseline;
+    
 }
-#wrap header nav > ul > li > a{
-    color: #333;
-    font-weight: bold;
-    font-size: 1.5em;
+nav ul li{
+    padding: 20px;
 }
-#wrap header nav ul li ul li{
-    display: inline-block;
-}
-#wrap header nav ul li ul li a{
+nav ul li a{
+    font-size: 1.3em;
+    color: #999;
+    transition: .5s;
     position: relative;
+    font-family: 'Noto Sans KR', sans-serif; 
+}
+nav ul li:first-of-type a{
+    font-size: 2em;
     color: #333;
-    margin: 20px;
 }
 
-#wrap header nav ul li ul li a:after{
+nav ul li a:after{
     content: '';
-    display: block;
-    width: 0;height: 0;
-    background: rgba(95,175,255,0.7);
-    border-radius: 100%;
-    opacity: 1;
-    transition: .5s;
-    z-index: -1;
-    position: absolute;right: 50%;top:0;
-    transform: translate(50%,0);
-}
-#wrap header nav ul li:nth-of-type(1) ul li a:after{
-    background-color: rgba(200,40,50,0.7);
-}
-#wrap header nav ul li:nth-of-type(3) ul li a:after{
-    background: rgba(241, 194, 106, 0.7);
-}
-#wrap header nav ul li ul li a:hover:after{
     width: 40px;height: 40px;
+    background-color: rgba(95,175,255,0.5);
+    position: absolute;left:60%;top: -30%;
+    border-radius: 100%;
+    z-index: -1;
+    transition: .5s;
+    transform: scale(0);
+    transform-origin: center;
+}
+nav ul:nth-of-type(2) li a:after{
+    background-color: rgba(200,40,50,0.5);
+}
+nav ul:nth-of-type(3) li a:after{
+    background-color: rgba(241, 194, 106, 0.5);;
+}
+nav ul li:first-of-type a:after{
+    content: '';
+    background: none;
+}
+nav ul li a:hover{
+    font-weight: bold;
+    color: #333;
+}
+nav ul li a:hover:after{
+    transform: scale(1);
 }
 
 
@@ -197,6 +204,7 @@ input:focus {
     margin:0;padding:0;
     background: black;
     transform: scale(1.05);
+    object-fit: cover;
    
 }
 #wrap .visual .figBox figure p iframe{
@@ -204,6 +212,7 @@ input:focus {
     margin:0;padding:0;
     background: black;
     transform: scale(1.05);
+    object-fit: cover;
 }
 
 #wrap .visual .figBox figure:nth-of-type(1){

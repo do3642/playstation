@@ -1,6 +1,6 @@
 @media (max-width:1600px){
-    header nav ul li ul li a{
-        margin: 10px;
+    nav ul li{
+        font-size: 14px;
     }
 }
 @media (max-width:1450px){
@@ -31,6 +31,12 @@
     } 
 
 }
+
+@media (max-width:1350px){
+    nav ul li{
+        padding: 10px;
+    }
+}
 @media (max-width:1250px){
     #wrap .content .con_top10 .con_top{
         flex-direction: column-reverse;
@@ -46,7 +52,6 @@
         display: none;
     }
     #wrap header h1 a img{
-        height: 40px;
         margin-bottom: 5px;
     }
     #wrap header .bugger{
@@ -57,25 +62,11 @@
         width:40vw;
         z-index:20;
     }
-    #wrap header nav ul li a{
-        margin: 10px;
-        font-size: 1.5em;
-        
-    }
-    #wrap header nav ul{
-        display: flex;
-        flex-direction: column;
-
-    }
-    #wrap header nav ul > li{
+    nav ul{
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        
     }
-    #wrap header nav ul li ul li a {
-        font-size:1em;
-    }
+
 
     
     #wrap .visual .figBox figure p video{
@@ -164,10 +155,17 @@
    
 }
 @media (max-width:600px){
-    #wrap .content h2 {padding-top:50px;}
-    #wrap header > span{
+    #wrap header{
+        justify-content: center;
+    }
+    #wrap header h1 a img {
+        width: 200px;height: auto;
+    }
+    #wrap header span input{
         display: none;
     }
+    #wrap .content h2 {padding-top:50px;}
+  
     #wrap .content .con_gigi figure p{
         width: 400px;
         height: 300px;
@@ -214,6 +212,12 @@
 }
 
 @media (max-width:480px){
+    nav ul li{
+        font-size: 10px;
+        padding: 3px;
+    }
+
+
     #wrap .content h2 {
         font-size: 1.5em;
     }

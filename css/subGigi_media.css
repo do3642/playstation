@@ -1,5 +1,6 @@
 
 @media (max-width:1600px){
+   
     .con1 p{
         width: 200px;height: 200px;
         font-size:10px;
@@ -7,13 +8,54 @@
     .con1 p.active{
         width: 250px;height: 250px;;
     }
+    nav ul li{
+        font-size: 14px;
+    }
+}
+@media (max-width:1350px){
+    nav ul li{
+        padding: 10px;
+    }
 }
 
+@media (max-width:1200px){
+    #wrap header > a{
+        display: none;
+    }
+    #wrap header h1 a img{
+        margin-bottom: 5px;
+    }
+    #wrap header .bugger{
+        left: 15px;top:10px;
+        width: 30px;height: 30px;
+    }
+    #wrap header nav{
+        width:40vw;
+        z-index:20;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
 
+  
+
+
+    .remoteTxt{width: 90%;}
+    .remoteTxt p{width: 50%;}
+}
 @media (max-width:993px){
     h2,h3,h4,h5,h6{
         font-size: 1.5em;
     }
+
+    #wrap .visual figure p{
+        display: none;
+    }
+    #wrap .visual figure figcaption.active{
+        margin-left: 0;
+    }
+
     .container >figure {
         flex-wrap: wrap;
         font-size: 14px;
@@ -66,10 +108,28 @@
 }
 
 
-
+@media (max-width:600px){
+    #wrap header{
+        justify-content: center;
+    }
+    #wrap header h1 a img {
+        width: 200px;height: auto;
+    }
+    #wrap header span input{
+        display: none;
+    }
+    #wrap .visual figure figcaption strong {
+        font-size: 10vw;
+    }
+    .remoteTxt{font-size: 12px;padding: 20px;}
+    .remoteTxt p{height: 40px;}
+   
+}
 @media (max-width:480px){
-
-
+    nav ul li{
+        font-size: 10px;
+        padding: 3px;
+    }
 
 
 
@@ -84,4 +144,5 @@
     .introduce .figBox figure figcaption{
         font-size: 12px;
     }
+    .remoteTxt{font-size: 10px;padding: 10px;}
 }

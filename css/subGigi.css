@@ -11,6 +11,10 @@ h2,h3,h4,h5{
     color: #333;
 }
 img{width: 100%;height: 100%;}
+button{
+    outline: none;
+    cursor: pointer;
+}
 
 #wrap header{
     width: 100%;
@@ -23,22 +27,32 @@ img{width: 100%;height: 100%;}
 }
 #wrap header > a img{
     width: 150px;
-    height: 50px;
+    height: auto;
 }
 #wrap header h1 img{
-    height: 55px;
+    width: 300px;
+    height: auto;
     margin-bottom: 20px;  
 }
 #wrap header span{
     position: relative;
     background: #fff;
+    
 }
 #wrap header span input{
+    /* padding-left: 5px;
     width: 200px;
     height: 30px;
     background:url('../img/search2.png')no-repeat;
     background-position: right bottom;
-    background-size: 22px;
+    background-size: 22px; */
+    width:100%;height: 100%;
+    background:url('../img/search2.png')no-repeat;
+    background-position: right center;
+    background-size: 15px;
+    border: none;
+    vertical-align: top;
+    padding-left: 5px;
 }
 header nav{
     position: fixed;left: -800px;top:0%;
@@ -46,58 +60,62 @@ header nav{
     background: rgba(255,255,255);
     width: 40vw;
     transition: 1s;
-    padding-top:10%;
-    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-left: 4%;
 }
 header nav.active{
 left:0;
 }
 
-header nav ul > li{
+nav ul{
     display: flex;
-    margin: 10px auto;
-    align-items: center;
-}
-header nav > ul >li> a{
-    color: #333;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-header nav ul li ul li{
-    display: inline-block;
-}
-header nav ul li ul li a{
-    position: relative;
-    color: #333;
-    margin: 20px;
-}
-
-
-
-header nav ul li ul li a:after{
-    content: '';
-    display: block;
-    width: 0;height: 0;
-    background: rgba(95,175,255,0.7);
-    border-radius: 100%;
-    opacity: 1;
-    transition: .5s;
-    z-index: -1;
-    position: absolute;right: 50%;top:0;
-    transform: translate(50%,0);
-}
-header nav ul li:nth-of-type(1) ul li a:after{
-    background-color: rgba(200,40,50,0.7);
-}
-header nav ul li:nth-of-type(2) ul li a:after{
+    align-items: baseline;
     
 }
-header nav ul li:nth-of-type(3) ul li a:after{
-    background: rgba(241, 194, 106, 0.7);
+nav ul li{
+    padding: 20px;
 }
-header nav ul li ul li a:hover:after{
-width: 40px;height: 40px;
+nav ul li a{
+    font-size: 1.3em;
+    color: #999;
+    transition: .5s;
+    position: relative;
+    font-family: 'Noto Sans KR', sans-serif; 
+}
+nav ul li:first-of-type a{
+    font-size: 2em;
+    color: #333;
+}
 
+nav ul li a:after{
+    content: '';
+    width: 40px;height: 40px;
+    background-color: rgba(95,175,255,0.5);
+    position: absolute;left:60%;top: -30%;
+    border-radius: 100%;
+    z-index: -1;
+    transition: .5s;
+    transform: scale(0);
+    transform-origin: center;
+}
+nav ul:nth-of-type(2) li a:after{
+    background-color: rgba(200,40,50,0.5);
+}
+nav ul:nth-of-type(3) li a:after{
+    background-color: rgba(241, 194, 106, 0.5);;
+}
+nav ul li:first-of-type a:after{
+    content: '';
+    background: none;
+}
+nav ul li a:hover{
+    font-weight: bold;
+    color: #333;
+}
+nav ul li a:hover:after{
+    transform: scale(1);
 }
 
 
@@ -269,7 +287,7 @@ width: 40px;height: 40px;
     width: 500px;
     color: #333;
     white-space: pre-line;
-    font-family: 'Noto Serif KR', serif;
+    font-family: 'Noto Sans KR', sans-serif; 
     line-height: 40px;
 }
 .pro figure figcaption strong{color:#333;font-size:1.5em;padding-bottom: 5px;}
@@ -299,6 +317,7 @@ width: 40px;height: 40px;
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
+    margin:100px 0;
 }
 .introduce .figBox figure p{
 
@@ -325,12 +344,12 @@ width: 40px;height: 40px;
     padding-bottom: 10px;
     color: #333;
     font-size: 1.5em;
-    font-family: 'Noto Serif KR', serif;
+    font-family: 'Noto Sans KR', sans-serif; 
 }
 .introduce .figBox figure figcaption small{
     color: #333;
     font-size: 1em;
-    font-family: 'Noto Serif KR', serif;
+    font-family: 'Noto Sans KR', sans-serif; 
 }
 .introduce .figBox button{
     border: none;
@@ -360,7 +379,7 @@ width: 40px;height: 40px;
 
 .intro{
     width: 100%;
-    background-image: url('../img/subGigi/introBack.jpg');
+    background-image: url('../img/subGigi/introBack2.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -577,6 +596,96 @@ overflow: hidden;}
     background: #f00;
     transition: 1s;
 }
+
+
+
+
+
+
+
+.remote{
+    margin: 100px 0;
+}
+.remote h4{
+    text-align: center;
+    margin: 50px 0;
+}
+.remoteImg{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.remoteImg span{
+    width: 500px;
+    padding: 50px 0;
+    transition: .5s;
+}
+.remoteImg span:first-of-type{
+    transform: translate(-50%,5%)
+}
+.remoteImg span:last-of-type{
+    transform: translate(50%,-5%);
+}
+.remoteImg span:first-of-type.active{
+    animation: remote1 1s forwards;
+}
+.remoteImg span:last-of-type.active{
+    animation: remote2 1s forwards;
+}
+@keyframes remote1{
+    0%{transform: translate(-50%,5%);}
+    70%{transform: translate(0%,5%);}
+    100%{transform: translate(0%,0%);}
+}
+@keyframes remote2{
+    0%{transform: translate(50%,-5%);}
+    70%{transform: translate(0%,-5%);}
+    100%{transform: translate(0%,0%);}
+}
+
+.remoteTxt{
+    border: 1px solid #999;
+    text-align: center;
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+   padding: 70px 50px;
+   white-space: pre-line;
+}
+.remoteTxt p{
+    position: absolute;left: 50%;top: -3%;
+    transform: translateX(-50%);
+    background: #666;
+    width: 30%;
+    height: 70px;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+}
+.remoteTxt span{
+    
+    color: #999;
+    text-align: left;
+    padding: 10px;
+    font-family: 'Noto Sans KR', sans-serif; 
+    font-size: 1em;
+}
+.remoteTxt strong{
+    color: #333;
+    font-size:1.3em;
+    padding-bottom: 20px;
+    font-family: 'Noto Sans KR', sans-serif; 
+}
+
+
+
+
+
 
 
 

@@ -39,10 +39,17 @@ $(function(){
                 $('.bugger').removeClass('active2'); 
             }
             
+            if(wTop > $('.remote').offset().top-200){
+                $('.remoteImg span').addClass('active');
+            }
+
+
         })
     }
     scrollE();
 
+
+    //클릭시 팝업 이미지 변경
     function intro(){
         $('.con1 p').on('click',function(){
             $('.con1 p').removeClass('active');
@@ -69,9 +76,18 @@ $(function(){
     }
     intro();
 
+
+    //추가 기능 표시
     function introduce(){
         $('.figBox button').on('click',function(){
-            $('.intro ').slideDown(1000);
+            $(this).toggleClass('hasClass');
+            if($(this).hasClass('hasClass')){
+                $('.intro ').slideDown(1000);
+            }else{
+                $('.intro ').slideUp();
+
+            }
+           
         });
     }
     introduce();
@@ -92,6 +108,7 @@ $(function(){
     introTxt();
 
 
+    //모바일 환경에 나오는 pop2 무한슬라이드
     function conSlide(){
         var i=1;
         $('.popCon2 button').eq(0).on('click',function(){
@@ -114,10 +131,7 @@ $(function(){
            
         });
         
-        
-      
-
-
+        // 무브박스 움직임
         function slideshow(){
             if(i==0){
                 setTimeout(function(){
@@ -148,6 +162,7 @@ $(function(){
             })
 
         }
+        //밑에 네비바
         function bar(){
            
             $('.navBar small').css({
@@ -161,6 +176,7 @@ $(function(){
     }
     conSlide();
 
+    //앞뒤 클론생성
     function clone(){
         var cloneElements = $('.figBox2 .moveBox figure').eq(0).clone();
         var cloneElements6 = $('.figBox2 .moveBox figure').eq(5).clone();
@@ -173,12 +189,14 @@ $(function(){
 
 
 
-
+    //반응형 js
     function media(){
         var m = window.matchMedia("screen and (max-width: 993px)");
         m.addListener(function(e){
             if(e.matches){
                $('.intro').slideUp();
+               $('.visual_ani').find('p') .addClass('active');
+               $('.visual_ani').find('figcaption') .addClass('active')
             }else{
             }
             });

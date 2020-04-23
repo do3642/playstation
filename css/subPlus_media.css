@@ -1,7 +1,7 @@
 
 @media (max-width:1600px){
-    header nav ul li ul li a{
-        margin: 10px;
+    nav ul li{
+        font-size: 14px;
     }
     .plus .con1{
         flex-direction: row;
@@ -25,12 +25,17 @@
     .plus .con1 .btn_css{display: none;}
 
 }
+@media (max-width:1350px){
+    nav ul li{
+        padding: 10px;
+    }
+}
+
 @media (max-width:1200px){
     #wrap header > a{
         display: none;
     }
     #wrap header h1 a img{
-        height: 40px;
         margin-bottom: 5px;
     }
     #wrap header .bugger{
@@ -41,25 +46,12 @@
         width:40vw;
         z-index:20;
     }
-    #wrap header nav ul li a{
-        margin: 10px;
-        font-size: 1.5em;
-        
-    }
-    #wrap header nav ul{
-        display: flex;
-        flex-direction: column;
-
-    }
-    #wrap header nav ul > li{
+    nav ul{
         flex-direction: column;
         align-items: center;
-        text-align: center;
-        
     }
-    #wrap header nav ul li ul li a {
-        font-size:1em;
-    }
+
+
     #wrap .visual figure figcaption strong {
         font-size: 3em;
     }
@@ -124,12 +116,16 @@
      
 }
 @media (max-width:600px){
-    #wrap header{
+     #wrap header{
         justify-content: center;
+    }
+    #wrap header h1 a img {
+        width: 200px;height: auto;
     }
     #wrap header span input{
         display: none;
     }
+
     #wrap .visual figure figcaption strong {
         font-size: 10vw;
     }
@@ -151,6 +147,14 @@
 }
 
 @media (max-width:480px){
+
+    nav ul li{
+        font-size: 10px;
+        padding: 3px;
+    }
+
+
+
     #wrap .container .sub_menu a{
         font-size: 1.2em;
     }

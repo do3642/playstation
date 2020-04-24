@@ -78,6 +78,27 @@
         width: 300px;
         font-size: 1.5em;
     }
+
+
+    .textBox{
+        position: static;
+        transform: translateY(0);
+        width: 100%;
+    }
+    .textBox span:nth-of-type(1){
+        color: #333;
+        font-size: 1.5em;
+    }
+    .textBox span:nth-of-type(2){
+        color: #333;
+        font-size: 1em;
+    }
+    .con1 div,.con2 div,.con3 div,.con4 div{
+        height: 300px;
+    }
+    div:after,div:before{
+        display: none;
+    }
   
 }
 
@@ -94,6 +115,16 @@
         width: 30px;
         height: 45px;
         margin: 0 auto 10px auto;
+    }
+
+
+    .detail .detailBox div{
+        width: 150px;
+        margin:5px;
+    }
+    .detail .detailBox div span{
+        width: 100px;
+
     }
     
 }

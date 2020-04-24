@@ -24,6 +24,7 @@ button{
    position: absolute; top: 1.5%;
    border-bottom: 1px solid rgba(255,255,255,0.5);
   align-items:center;
+  overflow: hidden;
 }
 #wrap header > a img{
     width: 150px;
@@ -292,52 +293,152 @@ nav ul li a:hover:after{
     text-align: center;
 }
 
-.con1{
-    margin-top: 100px;
+
+
+.con1,.con2,.con3,.con4{
     position: relative;
-    height: 700px;
     overflow: hidden;
 }
-.con1 p{
+.con1 div,.con2 div,.con3 div,.con4 div{
     width: 100%;
-    height: 100%;
-  background-image: url('../img/subPro/con1.jpg');
-  position: absolute;left: 0;top: 0;
-  background-size: cover;
+    height: 700px;
+    background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: -1;
-  
+  position: relative;
 }
-.con1:after{
+.con1 div:after,.con2 div:after,.con3 div:after,.con4 div:after,.con4 div:before{
     content: '';
     width: 100%;height: 100%;
-    background: linear-gradient( to right, transparent , #000  );
     position: absolute;left: 0;top: 0;
-    z-index: -1;
 }
-.con1 .textBox{
-   
-    width: 300px;height: 300px;
-   float: right;
-    transform: translate(-40%,70%);
+
+
+.con1{
+    margin-top: 100px;
+}
+
+.con1 div{
+  background-image: url('../img/subPro/con3.jpg');
+}
+
+.con1 div:after,.con3 div:after{
+    background: linear-gradient( to right, transparent 50% , #000  );
+}
+.con2 div:after,.con4 div:after{
+    background: linear-gradient( to left, transparent 50%, #000  );
+}
+.con4 div::before{
+    background: linear-gradient( to bottom, transparent 40%, #000  );
+}
+
+
+
+.textBox{
+    width: 400px;height: 200px;
     white-space: pre-line;
+    position: absolute;top: 30%;
+    transform: translateY(50%);
+    padding: 10px;
+    opacity: 0;
+    transition: .5s;
 }
-.con1 .textBox span{
+.textBox.active{
+    opacity: 1;
+    transform: translateY(0%);
+}
+.con1 .textBox,.con3 .textBox{
+    right:20%;
+}
+.con2 .textBox,.con4 .textBox{
+    left: 20%;
+}
+
+
+.textBox span{
     color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
 }
-.con1 .textBox span:nth-of-type(1){
-    font-size: .8em;
-    color: #00f;
-}
-.con1 .textBox span:nth-of-type(2){
-    font-size: 1.6em;
+
+.textBox span:nth-of-type(1){
+    font-size: 2em;
     padding-bottom: 15px;
 }
-.con1 .textBox span:nth-of-type(3){
-    font-size: 1em;
+.textBox span:nth-of-type(2){
+    font-size: 1.2em;
     color: antiquewhite;
 }
+
+.con2{
+    position: relative;
+    overflow: hidden;
+
+}
+.con2 div{
+  background-image: url('../img/subPro/con7.jpg');
+}
+
+.con3 div{
+  background-image: url('../img/subPro/witcher1.png');
+}
+
+.con4 div{
+  background-image: url('../img/subPro/netflix2.jpg');
+}
+
+
+
+
+.game{
+
+}
+.game .link{
+    width: 100%;
+    height: 500px;
+    background-color: #000;
+   
+}
+.game >p{
+    text-align: center;
+    color: rgb(143, 169, 255);
+    transform: translateY(-250%);
+}
+.game h5{
+    text-align:center;
+    transform: translateY(-120%);
+
+}
+.game .figBox{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+}
+.game .figBox figure{
+    width: 50%;
+    
+}
+.game .figBox figure p{
+    width: 100%;height: 90%;
+    position: relative;
+}
+.game .figBox figure p:after{
+    content: '';
+    width: 100%;height: 100%;
+    position: absolute;left: 0;top: 0;
+    background: linear-gradient( to bottom, transparent 50% , #000  );
+   
+}
+.game .figBox figure figcaption{
+    color: #fff;
+    background: #000;
+    text-align:center;
+    padding: 20px;
+}
+
+
+
 
 
 

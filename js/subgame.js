@@ -99,7 +99,7 @@ function call(){
             imgSrc = data.subGame[i].jImg;
             txt = data.subGame[i].jtxt;
             txt2 = data.subGame[i].jtxt2;
-            inner="<figure><img src="+imgSrc+"><img src='img/icn_ps4.gif'><figcaption>"+txt+"<small>"+txt2+"</small></figcaption></figure> "
+            inner="<figure><img src="+imgSrc+"><img src='img/icn_ps4.gif'><figcaption><strong>"+txt+"</strong><small>"+txt2+"</small></figcaption></figure> "
 
             $('.content .figBox').append(inner);
         });
@@ -220,6 +220,48 @@ function playmedia(){
 playmedia();
 
 
+
+    function find(){
+        $('.find input').keyup(function(){
+            typing = $(this).val().toLowerCase();
+            typing2 = $(this).val().toUpperCase();
+            $('.figBox figure').hide();
+            
+            if(typing == "") {
+                $('.figBox figure').show();
+                
+            }
+            
+            var title = $(".figBox figcaption strong:contains("+ typing + ")")
+            var title2 = $(".figBox figcaption strong:contains("+ typing2 + ")")
+          
+            title.parent().parent().show()
+            title2.parent().parent().show()
+
+
+
+
+           
+            
+        })
+
+
+        $('.find ul li ul li').on('click',function(){
+            $('.figBox figure').hide();
+            var jangtxt =$(this).text();
+            console.log(jangtxt)
+            var title = $(".figBox figcaption:contains("+ jangtxt + ")")
+            console.log(title)
+            if($(this).hasClass('active')){
+                title.parent().show();
+            }else{
+                $('.figBox figure').show();
+            }
+            
+            
+        });
+    }
+find();
 
 
 

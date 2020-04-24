@@ -584,11 +584,12 @@ border-left: 10px solid transparent;
     flex-direction: column;
     width: 100%;
     white-space: pre-line;
+    font-size: 1.1em;
+}
+.figBox figure strong{
     color:#333;
-    font-size: 1.3em;
+    font-size: 1em;
     font-family: 'Noto Sans KR', sans-serif;
-   
-
 }
 #wrap .container .figBox figure figcaption small{
     font-size: .7em;

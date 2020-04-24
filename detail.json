@@ -1,0 +1,53 @@
+{
+    "event":[
+        {"jImg":"img/subPro/detail1.jpg",
+            "jtxt":"PS4 Pro HD",
+            "jtxt2":"향상된 HD 해상도를 출력할 수 있습니다."
+        },
+        {"jImg":"img/subPro/detail2.jpg",
+            "jtxt":"다이내믹 4K 게이밍",
+            "jtxt2":"향상된 기술은 게임 해상도를 4K에 가깝게 구현합니다."
+        },
+        {"jImg":"img/subPro/detail3.jpg",
+            "jtxt":"Pro의 기본 4K",
+            "jtxt2":"게임 해상도를 기본 2160p로 출력합니다."
+        },
+        {"jImg":"img/subPro/detail4.jpg",
+            "jtxt":"향상된 표현 거리",
+            "jtxt2":"먼 곳에 있는 오브젝트를 더 선명하고 자세하게 볼 수 있습니다."
+        },
+        {"jImg":"img/subPro/detail5.jpg",
+            "jtxt":"안티앨리어싱",
+            "jtxt2":"부드러운 곡선을 더욱 매끄럽고 현실적으로 표현합니다."
+        },
+        {"jImg":"img/subPro/detail6.jpg",
+            "jtxt":"Visual FX",
+            "jtxt2":"연기 또는 증기와 같은 작은 시각 효과를 현실적으로 묘사합니다."
+        },
+        {"jImg":"img/subPro/detail7.jpg",
+            "jtxt":"선명한 질감",
+            "jtxt2":"먼지 묻은 옷이나 녹슨 쇠처럼 정교한 이미지 디자인을 표현할 수 있습니다."
+        },
+        {"jImg":"img/subPro/detail8.jpg",
+            "jtxt":"정교한 그림자",
+            "jtxt2":"멀리 있는 그림자를 더욱 선명하고 뚜렷하게 표현합니다."
+        },
+        {"jImg":"img/subPro/detail9.jpg",
+            "jtxt":"HI-FI 이미지",
+            "jtxt2":"하나의 화면에 더 많은 양의 이미지를 표시할 수 있습니다."
+        },
+        {"jImg":"img/subPro/detail10.jpg",
+            "jtxt":"HRD",
+            "jtxt2":"인간의 눈으로 볼 수 있는 스펙트럼을 거의 완벽히 표현합니다(기본 PS4 모델에서도 지원)"
+        },
+        {"jImg":"img/subPro/detail13.jpg",
+            "jtxt":"FPS 부스트: 고정",
+            "jtxt2":"PS4 Pro는 더 안정적인 고정 프레임률을 표시합니다."
+        },
+        {"jImg":"img/subPro/detail12.jpg",
+            "jtxt":"FPS 부스트: 목표",
+            "jtxt2":"PS4 Pro는 더 빠른 목표 프레임률을 표시합니다."
+        }
+     
+    ]
+}

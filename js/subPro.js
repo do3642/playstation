@@ -40,7 +40,18 @@ $(function(){
             }else{
                 $('.bugger').removeClass('active2'); 
             }
-            
+            if(wTop > $('.con1').offset().top-400){
+                $('.textBox').eq(0).addClass('active');
+            }
+            if(wTop > $('.con2').offset().top-400){
+                $('.textBox').eq(1).addClass('active');
+            }
+            if(wTop > $('.con3').offset().top-400){
+                $('.textBox').eq(2).addClass('active');
+            }
+            if(wTop > $('.con4').offset().top-400){
+                $('.textBox').eq(3).addClass('active');
+            }
            
 
         })
@@ -64,23 +75,64 @@ $(function(){
 
     function detail(){
         var src;
-        
         $('.detail .detailBox div').hover(function(){//마우스엔터
-            $(this).find('p').slideDown(500);
+
+            $(this).find('p').stop().slideDown(500);
             src= $(this).find('img').attr('src');
-           
             var Idx =src.lastIndexOf('.')-1;
             var i=src.substr(Idx,1);
             var j=i+'_change';
-            var re=src.replace(i,j);
+            var re=src.replace(i,j);    
             $(this).find('img').attr('src',re);
-           
-            
+
         },function(){ //마우스리브
-            $(this).find('p').slideUp(500);
+
+            $(this).find('p').stop().slideUp(500);
             $(this).find('img').attr('src',src);
+
         })
+
+       
     }
-    detail();
+
+    //json이 호출되고 인식하도록 settime
+    setTimeout(function(){
+        detail();
+    },100)
+    
+
+
+    //메인 컨텐츠 json 호출
+function call(){
+
+    $.ajax({//외부파일 호출 메소드
+        url : 'detail.json',
+        type : 'GET', //POST
+        dataType : 'json',
+        success :function(data){
+            
+    var imgSrc,txt,inner;
+        $(data.event).each(function(i){
+          
+            imgSrc = data.event[i].jImg;
+            txt = data.event[i].jtxt;
+            txt2 = data.event[i].jtxt2;
+            inner="<div><span><img src="+imgSrc+"></span><strong>"+txt+"</strong><p>"+txt2+"</p></div> "
+
+            $('.detail .detailBox').append(inner);
+        });
+        
+        
+
+
+        }
+    
+    
+    });
+};
+//json 함수 호출
+call();
+
+
 
 })

@@ -99,7 +99,17 @@
     div:after,div:before{
         display: none;
     }
-  
+    .game .link{
+        display: none;
+    }
+
+    .game >p{
+        transform: translateY(0);
+    }
+    .game h5{
+        transform: translateY(0);
+        margin-bottom: 20px;
+    }
 }
 
 

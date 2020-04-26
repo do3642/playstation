@@ -10,7 +10,7 @@ function mobh(){
 	$('.scrollEvent').css({
 		height:wh
 	});
-	$('.scrollEvent').eq(4).css({
+	$('.scrollEvent').eq(3).css({
 		height:wh-91
 	})
 	$('#loading').css({
@@ -22,7 +22,7 @@ function deskh(){
 	$('.scrollEvent').css({
 		height:'100vh'
 	});
-	$('.scrollEvent').eq(4).css({
+	$('.scrollEvent').eq(3).css({
 		height:'91.5vh'
 	})
 }
@@ -31,7 +31,6 @@ function deskh(){
 var main = document.querySelector('#wrap');
 var sec = main.querySelector('.visual');
 var trd = main.querySelector('.con_gigi');
-var four = main.querySelector('.con_top10');
 var five = main.querySelector('.con_game');
 var six = main.querySelector('.con_res');
 var fix = main.querySelector('.fix');
@@ -272,7 +271,7 @@ function wheelmove(){
 			// if(num < $('.scrollEvent').length-1){
 			// 	num++
 			// }// 증가
-			if(idx != 4){move = $(this).next().offset().top;
+			if(idx != 3){move = $(this).next().offset().top;
 				indi(idx,1);}
 			$('.bugger').removeClass('active');
 			$('header nav').removeClass('active');
@@ -333,7 +332,7 @@ $('.bugger').on('click',function(){
 
 // 기기class와 top10 클래스 페이지 스크롤시 css변경
 		var sTop = 0;
-		var arr =['01','02','03','04','05'];
+		var arr =['01','02','03','04'];
 		
 	$(window).on('scroll',function(){
 		sTop= $(this).scrollTop();//내가 스크롤하는 페이지의 높이
@@ -350,18 +349,8 @@ $('.bugger').on('click',function(){
 			
 			}//if문
 
-			if(i ==2){
-				$('.top_left').css({
-					transform:'translate(0)',
-					opacity:1
-				});
-				$('.top_right').css({
-					transform:'translate(0)',
-					opacity:1
-				});
-			}//if문
-
-			if(i ==4){
+	
+			if(i ==3){
 				$('.con_res > input').addClass('active')
 				$('footer').addClass('active');
 			}else{
@@ -376,63 +365,6 @@ $('.bugger').on('click',function(){
 	
 	//기기
 	
-
-	//json과 top10
-call(left);
-
-function left(){
-	var fourli =four.querySelectorAll('.con_top .top_right ol li');
-	var fourleft = four.querySelectorAll('.json figure');
-
-	for(let f=0;f<fourleft.length;f++){
-		fourli[f].addEventListener('click',function(){
-				for(let a=0;a<fourleft.length;a++){
-					fourleft[a].style.opacity=0;
-				
-				};
-			fourleft[f].style.opacity=1;
-
-		});
-	}
-	for(let f=0;f<fourleft.length;f++){
-		fourli[f+10].addEventListener('click',function(){
-			for(let a=0;a<fourleft.length;a++){
-				fourleft[a].style.opacity=0;
-			}
-			fourleft[f].style.opacity=1;
-		});
-	}
-}
- 
-	
-
-
-
-	//top_right호버시 css변경 제이쿼리 css:hover로도 가능
-$('.top_right ol li').on('mouseover',function(){
-	$(this).find('a').addClass('active')
-
-	$(this).on('mouseleave',function(){
-		$(this).find('a').removeClass('active')
-	});
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

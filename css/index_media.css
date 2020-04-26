@@ -3,46 +3,11 @@
         font-size: 14px;
     }
 }
-@media (max-width:1450px){
-    #wrap .content .con_top10 .con_top .top_right ol li a span{
-        margin: 0 25px; 
-     }
-     
-     #wrap .content .con_top10 .con_top .top_right ol:first-of-type{
-         display: none;
-     }
-     #wrap .content .con_top10 .con_top .top_right ol:last-of-type{
-        display: flex;
-     }
-     #wrap .content .con_top10 .con_top .top_right ol li a{
-         padding: 0;margin: 0;
-         border: none;
-     }
-     #wrap .content .con_top10 .con_top .top_right ol li:last-of-type a{
-         padding: 0;margin: 0;
-     }
-     #wrap .content .con_top10 .con_top .top_right ol li a img{
-         width: 100px;height: 100px;
-         padding: 0;margin:0;
-         border-radius: 0;
-     }
-     #wrap .content .con_top10 .con_top .top_left{
-       min-width: 700px;
-    } 
-
-}
 
 @media (max-width:1350px){
     nav ul li{
         padding: 10px;
     }
-}
-@media (max-width:1250px){
-    #wrap .content .con_top10 .con_top{
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-  
 }
 
 
@@ -100,9 +65,7 @@
     #wrap .content .con_gigi .btn_css{
         width: 200px;height: 40px;
     }
-    #wrap .content .con_top10 .con_top .top_right::after{
-        font-size: 1.2em;
-    }
+  
 
     #wrap .content .con_res > div{
         height: 300px;
@@ -148,11 +111,7 @@
     #wrap .content .con_game .btn_css{
         height: 40px;
     }
-    #wrap .content .con_top10 .con_top .top_right .btn_css {
-        width: 200px;height: 40px;
-        bottom: 2%;
-    }
-   
+    
 }
 @media (max-width:600px){
     #wrap header{
@@ -179,19 +138,6 @@
     }
     #wrap .visual .figBox figure:nth-of-type(4) span{
         height: 150px;
-    }
-    #wrap .content .con_top10 .con_top .top_left{
-        display: none;
-    }
-    #wrap .content .con_top10 .con_top .top_right .mob_top10{
-        width: 100vw;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-       
-    }
-    #wrap .content .con_top10 .con_top .top_right ol li a img{
-        width: 200px;height: 150px;
     }
     #wrap .content .con_res > input{
         width: 80px;height: 80px;
@@ -246,18 +192,6 @@
         display: none;
     }
 
-    #wrap .content .con_top10 .con_top .top_right .mob_top10{
-        width: 70vw;
-    }
-
-
-
-    #wrap .content .con_top10 .con_top .top_right ol li a img{
-        width: 110px;
-        height: 85px;
-      
-    }
-   
 
     #wrap .content .con_res > div input{
         width: 30px;height: 30px;

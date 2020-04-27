@@ -323,10 +323,10 @@ nav ul li a:hover:after{
 }
 
 .con1 div:after,.con3 div:after{
-    background: linear-gradient( to right, transparent 50% , #000  );
+    background: linear-gradient( to right, transparent  , #000  );
 }
 .con2 div:after,.con4 div:after{
-    background: linear-gradient( to left, transparent 50%, #000  );
+    background: linear-gradient( to left, transparent , #000  );
 }
 .con4 div::before{
     background: linear-gradient( to bottom, transparent 40%, #000  );
@@ -606,7 +606,7 @@ nav ul li a:hover:after{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 #wrap footer p{
     color: #999;

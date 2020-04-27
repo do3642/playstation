@@ -98,7 +98,7 @@ function call(){
 
 
     $.ajax({//외부파일 호출 메소드
-        url : 'spec.json',
+        url : '../json/spec.json',
         type : 'GET', //POST
         dataType : 'json',
         success :function(data){
@@ -140,7 +140,7 @@ $( window ).resize( function() {
 function call2(){
 
     $.ajax({//외부파일 호출 메소드
-        url : 'spec.json',
+        url : '../json/spec.json',
         type : 'GET', //POST
         dataType : 'json',
         success :function(data){

@@ -83,7 +83,7 @@ scrollani();
 function call(){
 
     $.ajax({//외부파일 호출 메소드
-        url : 'figure.json',
+        url : '../json/figure.json',
         type : 'GET', //POST
         dataType : 'json',
         success :function(data){
@@ -94,7 +94,7 @@ function call(){
             imgSrc = data.subGame[i].jImg;
             txt = data.subGame[i].jtxt;
             txt2 = data.subGame[i].jtxt2;
-            inner="<figure><img src="+imgSrc+"><img src='img/icn_ps4.gif'><figcaption><strong>"+txt+"</strong><small>"+txt2+"</small></figcaption></figure> "
+            inner="<figure><img src="+imgSrc+"><img src='../img/icn_ps4.gif'><figcaption><strong>"+txt+"</strong><small>"+txt2+"</small></figcaption></figure> "
 
             $('.content .figBox').append(inner);
         });

@@ -58,7 +58,7 @@ $(function(){
 function call(){
 
     $.ajax({//외부파일 호출 메소드
-        url : 'figure.json',
+        url : '../json/figure.json',
         type : 'GET', //POST
         dataType : 'json',
         success :function(data){
@@ -242,10 +242,10 @@ var i =0;
 setTimeout(function() {
 function changeImg(){
     var fig = $('.conGame .figBox figure');
-    console.log(fig);
+  
     $('.conGame .figBox figure').on('mouseover',function(){
         var src = $(this).find('img').attr('src');
-        console.log(src);
+      
         
         $('.conBack').css({
             backgroundImage: 'url('+src+')'

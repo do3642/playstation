@@ -1,0 +1,114 @@
+{ 
+    "subGame":[
+        {"jImg":"../img/subcon1.jpg",
+            "jtxt":"TT 아일 오브 맨 2\n\n",
+            "jtxt2":" 장르 : 레이싱\n발매일: 2020-03-30\n언어(자막): 한국어"
+        },
+        {"jImg":"../img/subcon2.png",
+            "jtxt":"둠® 이터널™\n\n",
+            "jtxt2":"장르 : 액션\n발매일: 2020-03-20\n언어(자막): 한국어"
+        },
+        {"jImg":"../img/subcon3.jpg",
+            "jtxt":"13기병방위권\n\n",
+            "jtxt2":"장르 : 어드벤쳐\n발매일: 2020-03-19\n언어(자막): 한국어"
+        },
+        {"jImg":"../img/subcon4.jpg",
+            "jtxt":"칸다가와 제트 걸즈\n\n",
+            "jtxt2":"장르 : 레이싱\n발매일: 2020-03-12\n언어(자막): 한국어"
+        },
+        {"jImg":"../img/subcon5.jpg",
+            "jtxt":"휴먼: 폴 플랫\n\n",
+            "jtxt2":"  장르 : 어드벤쳐\n발매일: 2020-03-02\n언어(자막): 한국어"
+        },
+        {"jImg":"../img/subcon6.jpg",
+            "jtxt":"오버패스\n\n",
+            "jtxt2":"장르 : 레이싱\n발매일: 2020-02-28\n언어(자막): 한국어"
+        },
+        {"jImg":"../img/subcon7.jpg",
+            "jtxt":"페르소나 5 더 로열\n\n",
+            "jtxt2":" 장르 : RPG\n발매일: 2020-02-20\n언어(자막): 한국어"
+        },
+        {"jImg":"../img/subcon8.jpg",
+            "jtxt":"언더 나이트 인버스\n엑셀레이트 클레어\n\n",
+            "jtxt2":"장르 : 대전 격투\n발매일: 2020-02-20\n언어(자막): 한국어"
+        },
+        {"jImg":"../img/subcon9.jpg",
+             "jtxt":"다크사이더스 제네시스\n\n",
+            "jtxt2":"장르 : 액션\n발매일: 2020-02-17\n언어(자막): 한국어"
+        },
+        {"jImg":"../img/subcon10.jpg",
+         "jtxt":"그랑블루 판타지 버서스\n\n",
+            "jtxt2":"장르 : 대전 격투\n발매일: 2020-02-06\n언어(자막): 한국어"
+        },
+        {"jImg":"../img/subcon11.jpg",
+             "jtxt":"저니 투 더 새비지 플래닛\n\n",
+            "jtxt2":"장르 : 액션\n발매일: 2020-02-03\n언어(자막): 한국어"
+            },
+        {"jImg":"../img/subcon12.jpg",
+             "jtxt":"코드 시프터\n\n",
+            "jtxt2":"장르 : 액션\n발매일: 2020-01-30\n언어(자막): 한국어"
+        },
+        {"jImg":"../img/subcon13.jpg",
+             "jtxt":"용과 같이7\n빛과 어둠의 행방\n\n",
+            "jtxt2":"장르 : RPG\n발매일: 2020-01-16\n언어(자막): 한국어"
+        },
+        {"jImg":"../img/subcon14.jpg",
+             "jtxt":"삼국지14\n\n",
+            "jtxt2":"장르 : 시뮬레이션\n발매일: 2020-01-16\n언어(자막): 한국어"
+        },
+        {"jImg":"../img/subcon15.jpg",
+             "jtxt":"라이자의 아틀리에\n어둠의 여왕과\n비밀의 은신처\n\n",
+            "jtxt2":"장르 : RPG\n발매일: 2020-01-09\n언어(자막): 한국어"
+        },
+        {"jImg":"../img/subcon16.jpg",
+            "jtxt":"무쌍OROCHI3\nUltimate\n\n",
+           "jtxt2":"장르 : 액션\n발매일: 2019-12-19\n언어(자막): 한국어"
+        },
+        {"jImg":"../img/subcon17.jpg",
+            "jtxt":"피싱: 바렌츠해-\n컴플리트 에디션\n\n",
+           "jtxt2":"장르 : 시뮬레이션\n발매일: 2019-12-16\n언어(자막): 한국어/영어"
+        },
+        {"jImg":"../img/subcon18.jpg",
+            "jtxt":"신 사쿠라대전\n\n",
+           "jtxt2":"장르 : 액션 어드벤쳐\n발매일: 2019-12-12\n언어(자막): 한국어"
+        },
+        {"jImg":"../img/subcon19.jpg",
+            "jtxt":"고스트버스터즈:\n더 비디오 게임\n리마스터드\n\n",
+           "jtxt2":"장르 : 액션\n발매일: 2019-12-12\n언어(자막): 한국어"
+        },
+        {"jImg":"../img/subcon20.jpg",
+            "jtxt":"몬스터 보이와\n저주받은 왕국\n\n",
+           "jtxt2":"장르 : 액션 어드벤쳐\n발매일: 2019-12-12\n언어(자막): 한국어"
+        }
+       
+     
+    ],
+    "subVr":[
+        {"jImg":"../img/subVr/congame1.jpg",
+            "jtxt":"Throw Anything"
+        },
+        {"jImg":"../img/subVr/congame2.jpg",
+            "jtxt":"Concrete Genie"
+        },
+        {"jImg":"../img/subVr/congame3.jpg",
+            "jtxt":"Blood & Truth"
+        },
+        {"jImg":"../img/subVr/congame4.jpg",
+            "jtxt":"모두의 GOLF VR"
+        },
+        {"jImg":"../img/subVr/congame5.jpg",
+            "jtxt":"ASTRO BOT : RESCUE\nMISSION"
+        },
+        {"jImg":"../img/subVr/congame6.jpg",
+            "jtxt":"Immortal Legacy: The Jade\nCipher"
+        },
+        {"jImg":"../img/subVr/congame7.jpg",
+            "jtxt":"Déraciné"
+        },
+        {"jImg":"../img/subVr/congame8.jpg",
+            "jtxt":"FIREWALL ZERO HOUR"
+        }
+       
+    ]
+   
+}

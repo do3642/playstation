@@ -93,7 +93,7 @@ $(function(){
 
 
     function textSlide(){
-            var src = ['img/subPlus/rewards1.jpg','img/subPlus/rewards2.jpg','img/subPlus/rewards.png','img/subPlus/rewards4.png'];
+            var src = ['../img/subPlus/rewards1.jpg','../img/subPlus/rewards2.jpg','../img/subPlus/rewards.png','../img/subPlus/rewards4.png'];
         $('.rewards .textBox div').on('click',function(e){
             $('.rewards .textBox div div').removeClass('active');
             $('.rewards .textBox div').removeClass('active');

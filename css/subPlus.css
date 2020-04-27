@@ -333,6 +333,7 @@ align-items: center;
 .ticket{
     background-image: url('../img/gigiback.jpg');
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     padding-bottom: 50px;

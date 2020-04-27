@@ -80,6 +80,7 @@ $(function(){
 
     function detail(){
         var src;
+      
         $('.detail .detailBox div').hover(function(){//마우스엔터
 
             $(this).find('p').stop().slideDown(500);
@@ -111,7 +112,7 @@ $(function(){
 function call(){
 
     $.ajax({//외부파일 호출 메소드
-        url : 'detail.json',
+        url : '../json/detail.json',
         type : 'GET', //POST
         dataType : 'json',
         success :function(data){

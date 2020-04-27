@@ -4,6 +4,14 @@
 input:focus {
     outline:none;
 }
+button{
+    cursor: pointer;
+}
+button:focus{
+    outline:none;
+}
+
+
 #wrap{
    
 }
@@ -281,7 +289,7 @@ nav ul li a:hover:after{
    overflow: hidden;
    z-index: 1;
 }
-#wrap .visual .visual_but input{
+#wrap .visual .visual_but button{
     width: 100%;height: 100%;
     cursor: pointer;
     text-align: center;
@@ -452,16 +460,17 @@ input{
 #wrap .content .con_gigi .btn_css{
     position: absolute;top: 70%;right: 50%;
     transform: translate(50%,0);
-    width: 150px;
+    width: 200px;
     height: 40px;
 }
-#wrap .content .con_gigi figure figcaption input{
+#wrap .content .con_gigi figure figcaption button{
     width: 100%;
-    height: 100%;
+    padding:10px 0;
     background: rgba(95,175,255,0.7);
     border: none;
     color: #fff;
     font-weight: bold;
+   text-align: center;
 }
 
 
@@ -540,7 +549,7 @@ input{
     transform: translate(-50%,0);
     width: 200px;height: 50px;
 }
-#wrap .content .con_game div input{
+#wrap .content .con_game div button{
     width: 100%;height: 100%;
     background: rgba(95,175,255,0.7);
     color: #fff;
@@ -605,7 +614,7 @@ z-index: 0;
     color: #fff;
     padding:50px 0;
 }
-#wrap .content .con_res > input{
+#wrap .content .con_res > button{
     width: 150px;height: 150px;
     border-radius: 2%;
     position: absolute;right: 7%;top:-20%;
@@ -620,10 +629,10 @@ z-index: 0;
     z-index:10;
     transform: scale(0.85);
 }
-#wrap .content .con_res > input:hover{
+#wrap .content .con_res > button:hover{
     transform: scale(1);
 }
-#wrap .content .con_res > input.active{
+#wrap .content .con_res > button.active{
     top:14%;
 }
 #wrap .content .con_res > div{
@@ -807,7 +816,7 @@ opacity: 1;
     margin: 0 auto;
 }
 
-#wrap .content .con_gigi .mob_gigi input{
+#wrap .content .con_gigi .mob_gigi button{
     text-align: center;
     display:block;
     margin: 0 auto;

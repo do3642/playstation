@@ -164,12 +164,12 @@ nav ul li a:hover:after{
 #wrap header .bugger.active span:nth-of-type(3){
     transform: translate(0,-300%) rotate(-45deg);
 }
+#wrap header .bugger.active2 span{
+    background-color: rgba(95,175,255,1);
+}
 
 #wrap header .bugger.active span{
     background: #000;
-}
-#wrap header .bugger.active2 span{
-    background-color: rgba(95,175,255,1);
 }
 
 

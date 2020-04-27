@@ -351,10 +351,10 @@ $('.bugger').on('click',function(){
 
 	
 			if(i ==3){
-				$('.con_res > input').addClass('active')
+				$('.con_res > button').addClass('active')
 				$('footer').addClass('active');
 			}else{
-				$('.con_res > input').removeClass('active')
+				$('.con_res > button').removeClass('active')
 				$('footer').removeClass('active');
 
 			}//if문

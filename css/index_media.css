@@ -48,7 +48,7 @@
        transform: translate(50%,0);
        width: 200px;height: 40px;
     }
-    #wrap .visual .visual_but .btn_css input{
+    #wrap .visual .visual_but .btn_css button{
         font-size: 1em;
     }
     #wrap .visual .figBox figure span{
@@ -139,11 +139,11 @@
     #wrap .visual .figBox figure:nth-of-type(4) span{
         height: 150px;
     }
-    #wrap .content .con_res > input{
+    #wrap .content .con_res > button{
         width: 80px;height: 80px;
         font-size: 1em;
     }
-    #wrap .content .con_res > input.active{
+    #wrap .content .con_res > button.active{
      top: 5%;
     }
     
@@ -200,7 +200,7 @@
         width: 30px;height: 30px;
     }
     #wrap .content .con_res > div {
-        height: 200px;
+        height: 170px;
     }
     #wrap .content .con_res div p{
         width: 400px;

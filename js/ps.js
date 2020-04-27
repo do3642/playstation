@@ -457,7 +457,7 @@ function update(){
 		resclick=2;
 	}else if(resclick <$(resBack).length-1){
 		$(resInput).eq(1).css({
-			opacity:1,cursor:'pointer'
+			opacity:.5,cursor:'pointer'
 		});//버튼css
 	}//이프문 종료
 	
@@ -475,7 +475,7 @@ function update(){
 		resclick=0;
 	}else{
 		$(resInput).eq(0).css({
-			opacity:1,cursor:'pointer'
+			opacity:.5,cursor:'pointer'
 		});
 	}
 	if(resclick==0){

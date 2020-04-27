@@ -35,13 +35,18 @@
         align-items: center;
     }
 
-  
+    .game .figBox figure:nth-of-type(6) p{
+        height: auto;
+    }
 
 }
 
 @media (max-width:993px){
     h2,h3,h4,h5,h6{
         font-size: 1.5em;
+    }
+    .game >p{
+        font-size: .8em;
     }
 
     #wrap .visual figure p:first-of-type{
@@ -58,9 +63,21 @@
     }
    
 
-
-
-
+    .game .figBox figure{
+        width: 45%;
+    }
+    .game .figBox figure:nth-of-type(3),.game .figBox figure:nth-of-type(4),.game .figBox figure:nth-of-type(5),.game .figBox figure:nth-of-type(6){
+        width: 45%;
+    }
+    .game .figBox figure figcaption{
+        font-size: 1em;
+    }
+    .game .figBox figure figcaption strong{
+        font-size: 1em;
+    }
+    .game .figBox figure figcaption small{
+        display: none;
+    }
     
 }
 
@@ -96,7 +113,7 @@
     .con1 div,.con2 div,.con3 div,.con4 div{
         height: 300px;
     }
-    div:after,div:before{
+    .con1 div:after,.con2 div:after,.con3 div:after,.con4 div:after,.con4 div:before{
         display: none;
     }
     .game .link{
@@ -114,6 +131,9 @@
 
 
 @media (max-width:480px){
+    .game >p{
+        font-size: .5em;
+    }
     nav ul li{
         font-size: 10px;
         padding: 3px;
@@ -137,4 +157,10 @@
 
     }
     
+    .game .figBox figure figcaption{
+        font-size: .7em;
+    }
+    .game .figBox figure figcaption strong{
+        font-size: .7em;
+    }
 }

@@ -9,6 +9,10 @@ font-family: 'Noto Sans KR', sans-serif; */
 h2,h3,h4,h5,h6{
     font-size: 2em;
 }
+button{
+    outline: none;
+    cursor: pointer;
+}
 
 
 #wrap{
@@ -162,7 +166,7 @@ nav ul li a:hover:after{
     background: #000;
 }
 #wrap header .bugger.active2 span{
-    background: #000;
+    background-color: rgba(95,175,255,1);
 }
 
 
@@ -495,7 +499,7 @@ align-items: center;
    
 }
 #wrap .container .conGame .figBox button{
-    width:0;height: 50px;
+    width:200px;height: 50px;
     background: rgba(95,175,255,0.7);
     color: #fff;
     border: none;
@@ -509,7 +513,6 @@ align-items: center;
 }
 #wrap .container .conGame .figBox button.active{
     opacity: 1;
-    width: 200px;
 }
 
 
@@ -650,11 +653,11 @@ align-items: center;
     color: #fff;
     font-size: 1em;
     transition: 2s;
-    transform: scale(0);
+    opacity: 0;
     font-family: 'Noto Sans KR', sans-serif;
 }
 #wrap .btn_css button.active{
-    transform: scale(1);
+    opacity: 1;
 }
 
 
@@ -889,7 +892,7 @@ align-items: center;
     color: #fff;
     opacity: 0;
     transition: .5s;
-    transition-delay: .5s;
+    transition-delay: .25s;
     font-family: 'Noto Sans KR', sans-serif;
 }
 #wrap  .vr .vrBox figure:after{

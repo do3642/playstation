@@ -13,6 +13,10 @@ font-family: 'Noto Sans KR', sans-serif; */
 h2,h3,h4,h5{
     font-size: 2em;
 }
+button{
+    outline: none;
+    cursor: pointer;
+}
 
 #wrap header{
     width: 100%;

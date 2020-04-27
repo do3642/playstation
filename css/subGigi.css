@@ -360,6 +360,33 @@ nav ul li a:hover:after{
     color: #fff;
     background-color: rgba(95,175,255,0.7);
     border-radius: 45px;
+    animation: figbtn 1s infinite alternate;
+    position: relative;
+}
+.introduce .figBox button:after{
+    content: 'Click';
+    position: absolute;
+    color: #333;
+    bottom: 100%;left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Noto Serif KR', serif;  
+    animation: figbtn2 .5s infinite alternate;
+    letter-spacing: 5px;
+}
+@keyframes figbtn2{
+
+    100%{
+        bottom: 120%;
+    }
+}
+
+@keyframes figbtn{
+    0%{
+        background-color: rgba(95,175,255,0.7);
+    }
+    100%{
+        background-color: rgba(29, 4, 253, 0.7);
+    }
 }
 
 
@@ -621,10 +648,10 @@ overflow: hidden;}
     transition: .5s;
 }
 .remoteImg span:first-of-type{
-    transform: translate(-50%,5%)
+    transform: translate(-50%,-5%)
 }
 .remoteImg span:last-of-type{
-    transform: translate(50%,-5%);
+    transform: translate(50%,5%);
 }
 .remoteImg span:first-of-type.active{
     animation: remote1 1s forwards;
@@ -633,14 +660,14 @@ overflow: hidden;}
     animation: remote2 1s forwards;
 }
 @keyframes remote1{
-    0%{transform: translate(-50%,5%);}
-    70%{transform: translate(0%,5%);}
-    100%{transform: translate(0%,0%);}
+    0%{transform: translate(-50%,-5%);}
+    70%{transform: translate(0%,-5%);}
+    100%{transform: translate(0%,2.5%);}
 }
 @keyframes remote2{
-    0%{transform: translate(50%,-5%);}
-    70%{transform: translate(0%,-5%);}
-    100%{transform: translate(0%,0%);}
+    0%{transform: translate(50%,5%);}
+    70%{transform: translate(0%,5%);}
+    100%{transform: translate(0%,-2.5%);}
 }
 
 .remoteTxt{

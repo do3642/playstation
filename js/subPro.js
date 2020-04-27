@@ -52,7 +52,12 @@ $(function(){
             if(wTop > $('.con4').offset().top-400){
                 $('.textBox').eq(3).addClass('active');
             }
-           
+        //    $('.container >div').each(function(i){
+        //     var con= $('.container>div').eq(i).offset().top-400;
+        //    });
+        //    if(wTop > con){
+        //        $('.textBox').eq(i).addClass('active')
+        //    }
 
         })
     }

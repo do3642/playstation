@@ -198,11 +198,11 @@ nav ul li a:hover:after{
 .visual figure p:first-of-type{
     transform: translateX(50%) translateY(5%);
     opacity: 0;
-    width: 600px;
+    width: 550px;
 }
 .visual figure p:last-of-type{
     transform: translate(-90%);
-    width: 400px;
+    width: 350px;
     margin-left:5%;
     text-align: center;
     color: #fff;
@@ -402,6 +402,7 @@ nav ul li a:hover:after{
     text-align: center;
     color: rgb(143, 169, 255);
     transform: translateY(-250%);
+    font-size: 1em;
 }
 .game h5{
     text-align:center;
@@ -413,28 +414,72 @@ nav ul li a:hover:after{
     width: 100%;
     flex-wrap: wrap;
     flex-grow: 1;
+  
+   justify-content: center;
+   align-items: center;
 
 }
 .game .figBox figure{
-    width: 50%;
+    width: 45%;
+    margin: 5px;
+    position: relative;
+    transition: .4s;
+    cursor: pointer;
     
 }
+.game .figBox figure:nth-of-type(3),.game .figBox figure:nth-of-type(4),.game .figBox figure:nth-of-type(5){
+    width: 29.8%
+}
+.game .figBox figure:nth-of-type(6){
+    width: 100%;
+}
+.game .figBox figure:nth-of-type(6) p{
+  height: 800px;
+}
 .game .figBox figure p{
-    width: 100%;height: 90%;
+    width: 100%;height: auto;
     position: relative;
 }
+
 .game .figBox figure p:after{
     content: '';
     width: 100%;height: 100%;
     position: absolute;left: 0;top: 0;
     background: linear-gradient( to bottom, transparent 50% , #000  );
+   transition: .5s;
+}
+
+.game .figBox figure:hover{
+    transform: translateY(-2%);
+    box-shadow: 5px 5px 10px 5px rgba(0,0,0,.5);
    
+}
+.game .figBox figure:last-of-type:hover{
+    transform: translateY(0%);
+}
+.game .figBox figure:hover figcaption{
+    opacity: 1;
 }
 .game .figBox figure figcaption{
     color: #fff;
     background: #000;
     text-align:center;
-    padding: 20px;
+    width: 100%;
+    font-size: 1.5em;
+    padding: 10px 0;
+    transition: .5s;
+    opacity: 0;
+    position: absolute;bottom: 4%;left: 50%;
+    transform: translateX(-50%);
+    
+}
+.game .figBox figure figcaption strong{
+    font-size:1.5rem;
+    color: #fff;
+}
+.game .figBox figure figcaption small{
+    font-size: 1rem;
+    color: antiquewhite
 }
 
 
@@ -504,7 +549,49 @@ nav ul li a:hover:after{
 }
 
 
-
+.last{
+   position: relative;
+    padding: 100px 0;
+}
+.last div{
+    background-image: url('../img/subPro/320750.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;height: 100%;
+    position: absolute;left: 0;top:0;
+    z-index: -1;
+}
+.last div::after{
+    content: '';
+    position: absolute;
+    width: 100%;height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+.last figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+  
+}
+.last figure p{
+    width: 500px;
+}
+.last figure p img{}
+.last figure figcaption{
+    width: 700px;
+    font-size: 1.3em;
+    color: #fff;
+    margin: 0 10px;
+   
+    
+}
+.last figure figcaption span{
+    font-size: .7em;
+    color: #999;
+    padding: 10px 0;
+    color: antiquewhite;
+}
 
 
 

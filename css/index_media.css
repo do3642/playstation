@@ -168,8 +168,8 @@
         font-size: 1.5em;
     }
     #wrap .content .con_gigi figure p{
-        width: 300px;
-        height: 300px;
+        width: 150px;
+        height: 150px;
     }
     #wrap .content .con_gigi figure figcaption{
         width: 85vw;
@@ -183,6 +183,9 @@
     }
     #wrap .content .con_gigi .btn_css{
         top: 65%;
+    }
+    .con_gigi figure p:nth-of-type(2){
+        display: block;
     }
     
     /* #wrap .visual .scroll{

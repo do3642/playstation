@@ -65,16 +65,11 @@ function scrollani(){
         myTop= $(this).scrollTop();
         if(contop<myTop+200){
          $('.bugger').addClass('active2');
-         if($('#wrap').hasClass('test')){
-            $('.fix div').addClass('active');
-            $('.fix p').addClass('active');
-         }
+      
         
         }else{
             $('.bugger').removeClass('active2');
-            $('.fix div').removeClass('active');
-            $('.fix p').removeClass('active');
-    
+           
         }
         
     });
@@ -158,13 +153,13 @@ mobjang();
 
 function media(){
             var m = window.matchMedia("screen and (max-width: 1200px)");
-            var mwidth =window.matchMedia("screen and (max-width: 1800px)");
+            
             var visualM = window.matchMedia("screen and (max-width:600px");
 
         visualM.addListener(function(e){
             if(e.matches){
                 mobh();
-                console.log('600')
+                
             }else{
                 deskh();
             }
@@ -181,17 +176,7 @@ function media(){
         }
         });
 
-        mwidth.addListener(function(e){
-            if(e.matches){
-                $('.fix div').removeClass('active');
-            $('.fix p').removeClass('active');
-                $('#wrap').removeClass('test');
-               
-            }else{
-               
-                $('#wrap').addClass('test');
-            }
-        });
+        
 
             var windowWidth = $( window ).width();
             if(windowWidth < 1200) {
@@ -200,9 +185,7 @@ function media(){
             
             }
             
-            if(windowWidth >1800){
-                $('#wrap').addClass('test');
-            }
+          
            
         
            

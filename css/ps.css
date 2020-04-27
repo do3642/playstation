@@ -390,6 +390,8 @@ input{
     position: relative;left: 0;top: 0;
     width:100%;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 #wrap .content .con_gigi .wave{
     position: absolute;left: 0%;top: 0%;
@@ -422,7 +424,9 @@ input{
 }
 #wrap .content .con_gigi figure p{
     width: 700px;
-    
+}
+.con_gigi figure p:nth-of-type(2){
+    display: none;
 }
 #wrap .content .con_gigi figure p img{
     width: 100%;
@@ -634,19 +638,20 @@ z-index: 0;
     height: 70px;
     background-size:cover;
     background-position: center;
+    background-repeat: no-repeat;
     border:none;
     background-color: transparent;
-    margin:5px;
-    opacity: .7;
+    margin:5%;
+    opacity: .5;
     
 }
 
 #wrap .content .con_res > div input:first-of-type{
-   background-image: url('../img/arrow.png');
+   background-image: url('../img/back.png');
    
 }
 #wrap .content .con_res > div input:last-of-type{
-   background-image: url('../img/arrow2.png');
+   background-image: url('../img/next.png');
 
 }
 
@@ -765,9 +770,9 @@ z-index: 0;
     animation: fixani 1s forwards;
 }
 #wrap .fix span{
-    position: absolute;left:50%;top: 30%;
+    position: absolute;left:50%;top: 35%;
     transform: translate(-50%,0);
-    width: 2px; height: 150px;
+    width: 2px; height: 120px;
     background: rgba(255,255,255,0.5);
 }
 
@@ -828,7 +833,7 @@ opacity: 1;
 #loading{
     position: fixed;left: 0;top: 0;
     width:100vw;
-    height:100vh;
+    height:110vh;
     z-index: 1000;
     display: flex;
 }
@@ -852,7 +857,7 @@ opacity: 1;
     animation: load2 4s 6s forwards;
 }
 #loading img{
-    position: absolute;left:50%;top: 50%;
+    position: absolute;left:50%;top: 40%;
     transform: translate(-50%,-50%);
     z-index: 10;
     animation: loading 6s forwards;

@@ -481,7 +481,7 @@ function update(){
 	if(resclick==0){
 		$(resmain).attr('src','img/last1.jpg');
 		$(resimg).eq(0).attr('src','img/last1.jpg');
-		$(resimg).eq(1).attr('src','img/last2.webp');
+		$(resimg).eq(1).attr('src','img/lastofus1111.jpg');
 		$(resimg).eq(2).attr('src','img/lastofus3.jpg');
 		$(resimg).eq(3).attr('src','img/lastofus4.jpg');
 	}//이프문 종료

@@ -1,0 +1,111 @@
+@media (max-width:1600px){
+    nav ul li{
+        font-size: 14px;
+    }
+}@media (max-width:1350px){
+    nav ul li{
+        padding: 10px;
+    }
+}
+
+@media (max-width:1200px){
+    #wrap header > a{
+        display: none;
+    }
+    #wrap header h1 a img{
+        margin-bottom: 5px;
+    }
+    #wrap header .bugger{
+        left: 15px;top:10px;
+        width: 30px;height: 30px;
+    }
+    #wrap header nav{
+        width:40vw;
+        z-index:20;
+    }
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #wrap .visual figure figcaption{
+        transform: translateX(0);
+    }
+    #wrap .visual figure figcaption.active {
+        margin-left: 0;
+    }
+    #wrap .visual figure p{display: none;}
+    #wrap .visual figure {
+        top: 50%;
+    }
+  
+   
+}
+
+@media(max-width:993px){
+    h2,h3,h4,h5,h6{
+        font-size: 1.5em;
+    }
+    #wrap .visual figure figcaption strong{
+        font-size: 1.5em;
+    }
+}
+
+
+
+@media (max-width:600px){
+    #wrap header{
+        justify-content: center;
+    }
+    #wrap header h1 a img {
+        width: 200px;height: auto;
+    }
+    #wrap header span input{
+        display: none;
+    }
+    .colorPop figure{
+       max-width: 200px;
+    }
+    .sub_menu li a{
+        margin: 10px;
+        width: 22vw;
+    }
+    #wrap .container .sub_menu a::before {
+        border: none;
+    }
+    #wrap .container .sub_menu a::after {
+       border: none;
+    }
+
+
+    .con2Sub figure p{
+        width: 250px;
+    }
+
+    .top{
+        width: 50px;height: 50px;
+        font-size: 1em;
+    }
+    
+   
+
+ 
+  
+}
+
+@media (max-width:480px){
+    nav ul li{
+        font-size: 10px;
+        padding: 3px;
+    }
+    #wrap .visual figure figcaption{
+        font-size: 12px;
+    }
+    .sub_menu a{
+        font-size: 1em;
+        padding: 5px 0;
+    }
+    h3{
+        font-size: 1.2em;
+    }
+}

@@ -1,0 +1,538 @@
+@import url('common.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&family=Poor+Story&family=Pragati+Narrow&family=Song+Myung&family=Sunflower:wght@300&display=swap');
+/* font-family: 'Pragati Narrow', sans-serif;
+font-family: 'Song Myung', serif;
+font-family: 'Sunflower', sans-serif;
+font-family: 'Poor Story', cursive;
+font-family: 'Noto Sans KR', sans-serif; */
+
+h2,h3,h4,h5,h6{
+    font-size: 2em;
+}
+img{
+    width: 100%;height: 100%;
+}
+button{
+    outline: none;
+    cursor: pointer;
+}
+
+#wrap{
+   
+}
+#wrap header{
+    width: 100%;
+   display: flex;
+   justify-content: space-around;
+   z-index: 10;
+   position: absolute; top: 1.5%;
+   border-bottom: 1px solid rgba(255,255,255,0.5);
+  align-items:center;
+  
+}
+
+#wrap header > a{
+   
+}
+#wrap header > a img{
+    width: 150px;
+    height: auto;
+
+}
+#wrap header h1{
+    
+   
+       
+}
+#wrap header  h1 a{
+
+}
+#wrap header h1 img{
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;  
+}
+#wrap header span{
+    position: relative;
+    background: #fff;
+}
+#wrap header span input{
+    width:100%;height: 100%;
+    background:url('../img/search2.png')no-repeat;
+    background-position: right center;
+    background-size: 15px;
+    border: none;
+    vertical-align: top;
+    padding-left: 5px;
+
+}
+
+
+
+
+
+
+
+#wrap header nav{
+    position: fixed;left: -800px;top:0%;
+    height: 100vh;
+    background: rgba(255,255,255);
+    width: 40vw;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-left: 4%;
+}
+#wrap header nav.active{
+left:0;
+}
+
+nav ul{
+    display: flex;
+    align-items: baseline;
+    
+}
+nav ul li{
+    padding: 20px;
+}
+nav ul li a{
+    font-size: 1.3em;
+    color: #999;
+    transition: .5s;
+    position: relative;
+    font-family: 'Noto Sans KR', sans-serif; 
+}
+nav ul li:first-of-type a{
+    font-size: 2em;
+    color: #333;
+}
+
+nav ul li a:after{
+    content: '';
+    width: 40px;height: 40px;
+    background-color: rgba(95,175,255,0.5);
+    position: absolute;left:60%;top: -30%;
+    border-radius: 100%;
+    z-index: -1;
+    transition: .5s;
+    transform: scale(0);
+    transform-origin: center;
+}
+nav ul:nth-of-type(2) li a:after{
+    background-color: rgba(200,40,50,0.5);
+}
+nav ul:nth-of-type(3) li a:after{
+    background-color: rgba(241, 194, 106, 0.5);;
+}
+nav ul li:first-of-type a:after{
+    content: '';
+    background: none;
+}
+nav ul li a:hover{
+    font-weight: bold;
+    color: #333;
+}
+nav ul li a:hover:after{
+    transform: scale(1);
+}
+
+
+
+
+
+/* 햄버거메뉴 */
+#wrap header .bugger{
+    width: 40px;height: 50px;
+    position: fixed;left: 4%;top: 3%;
+    line-height: 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+#wrap header .bugger span{
+    width: 100%;height: 3px;
+    background-color: #fff;
+    transition: .5s;
+}
+#wrap header .bugger.active span:nth-of-type(1){
+    transform: translate(0,400%)rotate(45deg);
+}
+#wrap header .bugger.active span:nth-of-type(2){
+    opacity: 0;
+}
+#wrap header .bugger.active span:nth-of-type(3){
+    transform: translate(0,-300%) rotate(-45deg);
+}
+#wrap header .bugger.active2 span{
+    background-color: rgba(95,175,255,1);
+}
+
+#wrap header .bugger.active span{
+    background: #000;
+}
+
+
+
+
+
+
+
+
+#wrap .visual{
+    width: 100%;
+    height: 60vh;
+    
+    position: relative;
+    overflow: hidden;
+
+}
+#wrap > .visual > p{
+    width: 100%;height: 100%;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+   
+}
+#wrap > .visual > p:after{
+    content: '';
+    position: absolute;left: 0;top: 0;
+    width: 100%;height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+#wrap .visual p video{
+    width: 100%;height: 100%;
+    object-fit: cover;
+}
+#wrap .visual figure{
+    position: absolute;left: 50%;top: 60%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    transition: 1s;
+}
+#wrap .visual figure p{
+    width: 600px;
+    opacity: 0;
+    transition: 1s;
+    transform: translateX(80%);
+}
+#wrap .visual figure p.active{
+   transform: translateX(0);
+    opacity: 1;
+  left: 35%;
+}
+
+#wrap .visual figure p img{
+    width: 100%;height: 100%;
+}
+#wrap .visual figure figcaption{
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 50px;
+    letter-spacing: 1px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  transform: translateX(-100%);
+   transition: 1s;
+   letter-spacing: 1px;
+  
+}
+#wrap .visual figure figcaption.active{
+    transform: translateX(0%);
+    margin-left: 10%;
+}
+#wrap .visual figure figcaption strong{
+    font-size: 2em;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+.visual figure figcaption small{
+    font-size: 1em;
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+    margin-top: 100px;
+}
+.container h2{
+    text-align: center;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+
+.sub_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sub_menu a{
+    font-size: 1.5em;
+    margin: 0 25px 50px 25px;
+    width: 150px;
+    text-align: center;
+    position: relative;
+    background: #000;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+.sub_menu a.active{
+    background: rgba(95,175,255,0.7);
+}
+.sub_menu a.active:after{
+    border-left-color: rgba(95,175,255,0.7);
+}
+.sub_menu a.active:before{
+    border-right-color: rgba(95,175,255,0.7);
+}
+.sub_menu a:hover{
+    background: rgba(95,175,255,0.7);
+}
+.sub_menu a:hover:after{
+    border-left-color: rgba(95,175,255,0.7);
+}
+.sub_menu a:hover::before{
+    border-right-color: rgba(95,175,255,0.7);
+}
+.sub_menu a:after{
+    content: '';
+    position: absolute;left: 100%;top: 0;
+    border-top: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-bottom: 16px solid transparent;
+    border-left: 16px solid #000;
+    z-index:1;
+    transition: .5s;
+}
+.sub_menu a::before{
+    content: '';
+    position: absolute;right: 100%;top: 0;
+    border-top:16px solid transparent;
+    border-right:16px solid #000;
+    border-bottom:16px solid transparent;
+    border-left:16px solid transparent;
+    transition: .5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container .con1,.con2,.con3{
+    position: relative;
+    padding: 150px 0;
+}
+.con1Back,.con2Back,.con3Back{
+    position: absolute;left: 0;top: 0;
+    width: 100%;height: 100%;
+    background-image: url('../img/subCtrl/con1.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+}
+.con1Back:after,.con2Back:after,.con3Back:after{
+    content: '';
+    position: absolute;left: 0;top: 0;
+    background-color: rgba(0,0,0,0.5);
+    width:100%;height: 100%;
+   
+}
+.con2Back:after{
+    background-color: rgba(0,0,0,0.6);
+}
+
+.con1 >.con1Sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.con1 >.con1Sub video{
+    max-width: 700px;
+    object-fit: cover;
+}
+.con1 >.con1Sub span,.con2Sub figure figcaption{
+    white-space: pre-line;
+    width: 500px;
+    color: antiquewhite;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1em;
+    margin:0 2%;
+}
+.con1 >.con1Sub span strong,.con2Sub figure figcaption strong{
+    padding-bottom: 10px;
+    font-family: inherit;
+    color: #fff;
+    font-size: 1.5em;
+}
+.con1 >.con1Sub span button{
+    margin-top: 15px;
+    min-width: 300px;
+    background: rgba(95,175,255,.5);
+    border: none;
+    color: #fff;
+    padding: 10px 0;
+    position: relative;left: 50%;
+    transform: translateX(-50%);
+   
+}
+.colorPop{
+    position: absolute;left: 2%;top:5%;
+    display: flex;
+    flex-wrap:wrap;
+    background: #fff;
+    max-width: 1000px;
+    transform:scale(0);
+    transition: .5s;
+    margin: 0 2%;
+    
+}
+.colorPop.active{
+    transform: scale(1);
+}
+.colorPop figure{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 6% 0;
+   
+}
+.colorPop figure figcaption{
+    color: #333;
+    text-align:center;
+  
+}
+.colorPop button{
+    width:100px;
+    height: 40px;
+    position: absolute;right: 2%;top: 2%;
+    background-image: url('../img/subCtrl/exit.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    
+}
+
+
+section h3{
+    text-align: center;
+    color: #fff;
+    margin: 100px 0;
+}
+
+
+.intro figure,.con2Sub figure{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+    margin: 5% 0;
+}
+.intro figure:nth-of-type(odd){
+    flex-direction: row-reverse;
+}
+.intro figure p{
+    max-width: 600px;
+}
+.intro figure figcaption{
+    max-width: 500px;
+    white-space: pre-line;
+    margin: 0 2%;
+}
+.intro figure figcaption strong{
+    color: #fff;
+    font-size: 1.5em;
+}
+.intro figure figcaption small{
+    color: antiquewhite;
+    font-size: 1em;
+    width: 200px;
+}
+
+
+
+.con2,.con3{
+    display: none;
+}
+
+
+.con2Back{
+    background-image: url('../img/subCtrl/con2.jpg');
+}
+.con2Sub figure p{
+    width: 400px;
+}
+
+.con2Sub small{
+    color: rgb(99, 161, 253);
+}
+.con2Sub figure:nth-of-type(even){
+    flex-direction: row-reverse;
+}
+
+
+.top{
+    width: 70px;
+    height: 70px;
+    background-color:rgba(34, 122, 255, 0.7);
+    position: absolute;right: 2%;top: 5%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    transition: .5s;
+    transform: scale(0);
+}
+
+#wrap footer{
+    height: 100px;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#wrap footer p{
+    color: #999;
+}
+
+.con3Back{
+    background-image: url('../img/subCtrl/con3.jpg');
+}

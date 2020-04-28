@@ -25,8 +25,7 @@
               rel: 0,
               loop:1,
               playlist:'UB7lcAQnp4c',
-              origin:'https://127.0.0.1:5500',
-              allow:'fullscreen'
+              origin:'https://127.0.0.1:5500'
              },//추천영상 안보여주게 설정
           events: {
             'onReady': onPlayerReady, //로딩할때 이벤트 실행

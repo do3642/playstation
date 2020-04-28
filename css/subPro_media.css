@@ -55,9 +55,7 @@
     #wrap .visual figure p:last-of-type{
         margin-left: 0;
     }
-    #wrap .visual .scroll{
-        display: block;
-    }
+
     #wrap .visual figure{
         top: 50%;
     }
@@ -141,12 +139,7 @@
     #wrap .visual figure p:last-of-type{
         width: 70vw;
     }
-    .visual .scroll div{
-        width: 30px;
-        height: 45px;
-        margin: 0 auto 10px auto;
-    }
-
+   
 
     .detail .detailBox div{
         width: 150px;
@@ -161,6 +154,12 @@
         font-size: .7em;
     }
     .game .figBox figure figcaption strong{
+        font-size: .7em;
+    }
+    .detail .detailBox div strong{
+        font-size: .8em;
+    }
+    .detail .detailBox div p {
         font-size: .7em;
     }
 }

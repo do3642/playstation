@@ -227,7 +227,7 @@ setTime = function() {
 
 
 			
-},5000);
+},4500);
 }
 //위에 idx값을 받아서 클릭했을때도 되게끔+setinter를 통한 자동배너
 setTime();

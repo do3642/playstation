@@ -204,7 +204,7 @@ setTime = function() {
 				};if(idxs==2){
 					setTimeout(function(){
 						player.playVideo();
-					},1000)
+					},5000)
 				
 					
 				};
@@ -212,7 +212,7 @@ setTime = function() {
 				if(idxs==3){
 					setTimeout(function(){
 						player2.playVideo();
-					},1000)
+					},5000)
 					
 					idxs=-1;
 				};

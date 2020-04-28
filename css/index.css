@@ -874,7 +874,7 @@ opacity: 1;
     
 }
 @keyframes loading{
-    0%{}
+   
     70%{
         opacity: 1;
     }
@@ -883,12 +883,12 @@ opacity: 1;
 
 @keyframes load{
     0%{left: -0;}
-    99%{}
+    
     100%{left: -100%;}
 }
 @keyframes load2{
     0%{right: -0;}
-    99%{}
+    
     100%{right: -100%;}
 }
 

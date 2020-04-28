@@ -202,12 +202,18 @@ setTime = function() {
 					
 					$(video).get(1).play();
 				};if(idxs==2){
-					player.playVideo();
+					setTimeout(function(){
+						player.playVideo();
+					},1000)
+				
 					
 				};
 				
 				if(idxs==3){
-					player2.playVideo();
+					setTimeout(function(){
+						player2.playVideo();
+					},1000)
+					
 					idxs=-1;
 				};
 				

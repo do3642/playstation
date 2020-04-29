@@ -37,9 +37,7 @@
     #wrap .visual .figBox figure p video{
         display: none;
     }
-    #wrap .visual .figBox figure p iframe{
-        display: none;
-    }
+  
     #wrap .visual .figBox figure figcaption{
        display: none;
     }

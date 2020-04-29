@@ -48,8 +48,9 @@ if(e.matches){
    $('.figBox figure p video').removeClass('playvideo');
 	$(video).get(0).pause();
 	$(video).get(1).pause();
-	player.pauseVideo();//일시정지
-	player2.pauseVideo();//일시정지
+	$(video).get(2).pause();
+	$(video).get(3).pause();
+
 	mobh();
 }
 else{
@@ -67,7 +68,9 @@ if(windowWidth < 1200) {
 		$('.figBox figure p video').removeClass('playvideo');
 	$(video).get(0).pause();
 	$(video).get(1).pause();
-	//유튜브 정지는 유튜브js안에
+	$(video).get(2).pause();
+	$(video).get(3).pause();
+	
 	mobh();
 	
 	}else{
@@ -106,8 +109,8 @@ for(let idx=0;idx<visual.length;idx++){
 			if($('.figBox p video').hasClass('playvideo')){
 				$(video).get(0).pause();
 				$(video).get(1).pause();
-				player.pauseVideo();//일시정지
-				player2.pauseVideo();//일시정지
+				$(video).get(2).pause();
+				$(video).get(3).pause();
 				
 			}
 			
@@ -136,7 +139,8 @@ for(let idx=0;idx<visual.length;idx++){
 				dot[1].classList.add('active');
 			}else if(idx ==2){
 				if($('.figBox p video').hasClass('playvideo')){
-					player.playVideo();
+					$(video).get(2).play();
+					
 					
 				}
 				
@@ -146,7 +150,8 @@ for(let idx=0;idx<visual.length;idx++){
 			}
 			else if(idx ==3){
 				if($('.figBox p video').hasClass('playvideo')){
-					player2.playVideo();
+					$(video).get(3).play();
+
 					
 				}
 				visual[3].style.zIndex='-1';
@@ -160,9 +165,8 @@ for(let idx=0;idx<visual.length;idx++){
 
 //위의 인덱스를 받아와서 자동 배너
 var video = $('.figBox figure p video');
-// var abcd =0;
-//유튜브js안에 setTime선언돼있음 
-setTime = function() {
+
+function setTime() {
 	set =setInterval(function(){
 	
 		for(let v=0;v<visual.length;v++){
@@ -193,27 +197,18 @@ setTime = function() {
 				// 	}
 				// });//스크롤이벤트
 				abcd = idxs;
-				// console.log(abcd);
 	
 				if(idxs==0){
 					$(video).get(0).play();
-					
-				};if(idxs==1){
-					
-					$(video).get(1).play();
-				};if(idxs==2){
-				
-						player.playVideo();
-		
-				
-					
 				};
-				
+				if(idxs==1){
+					$(video).get(1).play();
+				};
+				if(idxs==2){
+					$(video).get(2).play();
+				};
 				if(idxs==3){
-				
-						player2.playVideo();
-				
-					
+					$(video).get(3).play();
 					idxs=-1;
 				};
 				
@@ -225,12 +220,13 @@ setTime = function() {
 			idxs++;
 
 
-
-			
 },3500);
+
+
 }
 //위에 idx값을 받아서 클릭했을때도 되게끔+setinter를 통한 자동배너
 setTime();
+stopscrollvideo();
 
 
 
@@ -552,5 +548,61 @@ $(resimg).eq(0).css({
 	
 	 stopmedia();
 	 wheelmove();
+
+
+
+
+	 function stopscrollvideo(){
+		var blen=false;
+		var subbln=true;
+		$(window).on('scroll',function(){
+		  var a = $(this).scrollTop();
+		  
+		if( a <=500){
+			if($('.figBox p video').hasClass('playvideo')){
+			  if(localStorage.tube == 0){$(video).get(0).play()};
+			  if(localStorage.tube == 1){$(video).get(1).play()};
+			  if(localStorage.tube == 2){$(video).get(2).play()};
+			  if(localStorage.tube == 3){$(video).get(3).play()};
+		 	
+			}
+			subbln=true;
+		  if(blen) {
+			  blen=false;
+			  setTime();
+		
+		  };
+		  
+	 	 }else{	
+		if(subbln){
+
+		  subbln=false;
+		  if($('.figBox p video').hasClass('playvideo')){
+			
+			$(video).get(0).pause();
+			$(video).get(1).pause();
+			$(video).get(2).pause();
+			$(video).get(3).pause();
+			
+			
+		  }
+		  clearInterval(set);
+		}
+	   
+	  
+	  
+	  
+	  
+	  blen=true;
+	  
+	  
+	  }
+	  });
+	  }
+	  
+
+
+
+
 	
 });

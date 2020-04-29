@@ -1,0 +1,467 @@
+@import url('common.css');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Noto+Serif+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap');
+/* font-family: 'Ropa Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&family=Poor+Story&family=Pragati+Narrow&family=Song+Myung&family=Sunflower:wght@300&display=swap');
+/* font-family: 'Pragati Narrow', sans-serif;
+font-family: 'Song Myung', serif;
+font-family: 'Sunflower', sans-serif;
+font-family: 'Poor Story', cursive;
+font-family: 'Noto Sans KR', sans-serif; */
+button{
+    cursor: pointer;
+    outline: none;
+}
+#wrap{
+   
+}
+#wrap header{
+    width: 100%;
+   display: flex;
+   justify-content: space-around;
+   z-index: 10;
+   position: absolute; top: 1.5%;
+   border-bottom: 1px solid rgba(255,255,255,0.5);
+  align-items:center;
+  
+}
+
+
+#wrap header > a img{
+    width: 150px;
+    height: auto;
+}
+
+
+#wrap header h1 img{
+    width: 300px;
+    height: auto;
+    margin-bottom: 20px;  
+}
+#wrap header span{
+    position: relative;
+    background: #fff;
+}
+#wrap header span input{
+    width:100%;height: 100%;
+    background:url('../img/search2.png')no-repeat;
+    background-position: right center;
+    background-size: 15px;
+    border: none;
+    vertical-align: top;
+    padding-left: 5px;
+
+}
+
+
+
+
+
+
+
+#wrap header nav{
+    position: fixed;left: -800px;top:0%;
+    height: 100vh;
+    background: rgba(255,255,255);
+    width: 40vw;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10%;
+    padding-left: 4%;
+}
+#wrap header nav.active{
+left:0;
+}
+nav ul{
+    display: flex;
+    align-items: baseline;
+    
+}
+nav ul li{
+    padding: 20px;
+}
+nav ul li a{
+    font-size: 1.3em;
+    color: #999;
+    transition: .5s;
+    position: relative;
+    font-family: 'Noto Sans KR', sans-serif; 
+}
+nav ul li:first-of-type a{
+    font-size: 2em;
+    color: #333;
+}
+
+nav ul li a:after{
+    content: '';
+    width: 40px;height: 40px;
+    background-color: rgba(95,175,255,0.5);
+    position: absolute;left:60%;top: -30%;
+    border-radius: 100%;
+    z-index: -1;
+    transition: .5s;
+    transform: scale(0);
+    transform-origin: center;
+}
+nav ul:nth-of-type(2) li a:after{
+    background-color: rgba(200,40,50,0.5);
+}
+nav ul:nth-of-type(3) li a:after{
+    background-color: rgba(241, 194, 106, 0.5);;
+}
+nav ul li:first-of-type a:after{
+    content: '';
+    background: none;
+}
+nav ul li a:hover{
+    font-weight: bold;
+    color: #333;
+}
+nav ul li a:hover:after{
+    transform: scale(1);
+}
+
+
+
+
+
+/* 햄버거메뉴 */
+#wrap header .bugger{
+    width: 40px;height: 50px;
+    position: fixed;left: 4%;top: 3%;
+    line-height: 10px;
+    cursor: pointer;
+    z-index: 999;
+}
+#wrap header .bugger span{
+    width: 100%;height: 3px;
+    background-color: #fff;
+    transition: .5s;
+}
+#wrap header .bugger.active span:nth-of-type(1){
+    transform: translate(0,400%)rotate(45deg);
+}
+#wrap header .bugger.active span:nth-of-type(2){
+    opacity: 0;
+}
+#wrap header .bugger.active span:nth-of-type(3){
+    transform: translate(0,-300%) rotate(-45deg);
+}
+
+#wrap header .bugger.active2 span{
+    background-color: rgba(95,175,255,1);
+}
+#wrap header .bugger.active span{
+    background: #000;
+}
+
+
+
+
+
+
+
+
+
+
+#wrap .visual{
+    width: 100%;
+    height: 60vh;
+    
+    position: relative;
+
+}
+#wrap .visual p{
+    width: 100%;height: 100%;
+    overflow: hidden;
+}
+
+#wrap .visual p:nth-of-type(2){
+    display: none;
+    background-image: url('../img/subGame/mainvisual.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#wrap .visual p video{
+    width: 100%;
+    height: auto;
+}
+
+
+#wrap .visual figure{
+    position: absolute;left: 50%;top: 60%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: 1s;
+}
+#wrap .visual figure p{
+    width: 600px;height: 500px;
+    transform: translate(50%,10%);
+    opacity: 0;
+    transition: 1s;
+  
+    
+}
+#wrap .visual figure p.active{
+    opacity: 1;
+    transform: translate(-10%,10%);
+}
+
+#wrap .visual figure p img{
+    width: 100%;height: 100%;
+}
+#wrap .visual figure figcaption{
+    color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 70px;
+    letter-spacing: 1px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   transform: translateX(-75%);
+   transition: 1s;
+   
+}
+#wrap .visual figure figcaption.active{
+    transform: translateX(0);
+}
+#wrap .visual figure figcaption strong{
+    font-size: 4em;
+    color: #fff;
+    font-family: 'Noto Serif KR', serif;
+}
+
+#wrap .visual figure figcaption button{
+  width: 150px;height: 50px;
+  border: none;
+  background: rgba(95,175,255,0.7);
+  color: #fff;
+}
+
+
+
+#wrap .visual .scroll{
+   
+    position: absolute;left: 50%;bottom: 2%;
+    transform: translate(-50%,0%);
+    text-align: center;
+    display: none;
+}
+#wrap .visual .scroll div{
+    position: relative;
+	display: block;
+	width: 35px;
+	height: 55px;
+	margin: 0 auto 20px;
+	box-sizing: border-box;
+	border: 3px solid white;
+	border-radius: 23px;
+}
+#wrap .visual .scroll div p{
+    position: absolute;
+	display: block;
+	top: 29%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	background: white;
+	border-radius: 50%;
+	animation: scroll 1.5s linear infinite;
+}
+#wrap .visual .scroll span{
+    font-family: 'Noto Serif KR', serif;
+    color: #fff;
+    animation: scrollDown 1s linear infinite alternate;
+}
+@keyframes scroll {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@keyframes scrollDown {
+    0%{
+        opacity: .3;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#wrap .container{
+    overflow: hidden;
+    position: relative;
+    margin-top: 100px;
+    transition: .5s;
+    
+}
+#wrap .container h2{
+    text-align: center;
+    font-size: 2em;
+    color: #333;
+    padding: 50px;
+}
+
+
+
+
+
+
+#wrap .container .content{
+    width: 80%;
+    display: flex;
+    
+    
+    margin: 0 auto;
+}
+
+
+
+
+#wrap .container .find{
+   
+    width: 250px;
+    margin-right: 10px;
+}
+#wrap .container .find ul{
+    line-height: 50px;
+}
+#wrap .container .find ul li{
+  color: #333;
+}
+#wrap .container .find > ul > li:first-of-type{
+    border-bottom:1px solid #ccc;
+    padding-bottom: 20px;
+}
+#wrap .container .find > ul >li{
+    font-size:2em;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+#wrap .container .find ul li input{
+    background: url('../img/search2.png')no-repeat;
+    background-position: right;
+    background-size: 20px;
+    
+}
+
+#wrap .container .find ul li ul{
+   padding: 10px 0;
+   border-top: 1px solid #ccc;
+  
+   margin: 20px 0;
+ 
+}
+#wrap .container .find ul li ul li{
+    padding: 5px;
+    cursor: pointer;
+    background-color: #eee;
+    position: relative;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#wrap .container .find ul li ul li.active:after{
+    content: '';
+    position: absolute;right: 10%;top: 0;
+    background: url('../img/xicon.png')no-repeat;
+    background-size: 15px;
+    background-position: right;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    
+}
+
+#wrap .container .find ul li ul li.active{
+    background: linear-gradient(-180deg, rgb(44, 51, 58), rgb(70, 70, 70));
+    
+    color: #fff;
+}
+#wrap .container .find ul li ul li:hover{
+  background: #333;
+  color: #fff;
+}
+#wrap .container .find ul li ul li a{}
+
+
+#wrap .container .find ul li span{
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+    background: #ccc;
+    padding-left: 10px;
+   
+    display: none;
+}
+#wrap .container .find ul li span.active{
+    display: inline-block;
+}
+#wrap .container .find ul li span span.active{
+    display: inline-block;
+}
+#wrap .container .find ul li span span{
+    background: url('../img/xicon.png')no-repeat;
+    padding: 0 5px;
+    margin: 0 10px;
+    background-size: 10px;
+    background-position: center;
+    position: relative;
+    opacity: 1;
+    cursor: pointer;
+    
+}
+
+/* #wrap .container .find ul li span:hover span{
+    opacity: 1;
+    
+} */
+#wrap .container .find ul li span span:hover{
+    background: url('../img/xicon.png')no-repeat;
+    padding: 0 5px;
+    margin-left: 10px;
+    background-size: 10px;
+    background-position: center;
+    
+}
+#wrap .container .find ul li span:hover{
+    background: #333;
+    color: #fff;
+    
+}
+
+

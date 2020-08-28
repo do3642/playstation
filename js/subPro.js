@@ -104,7 +104,7 @@ $(function(){
     //json이 호출되고 인식하도록 settime
     setTimeout(function(){
         detail();
-    },100)
+    },1000)
     
 
 
